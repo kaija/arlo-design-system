@@ -1,0 +1,857 @@
+{
+ "note": "SF Symbols exported from the SF Symbols app names (Regular, 24pt). Draw with the markup; only these names exist.",
+ "symbols": [
+  {
+   "name": "arrow.trianglehead.clockwise",
+   "group": "Symbols",
+   "file": "symbols/Symbols/arrow.trianglehead.clockwise.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"arrow.trianglehead.clockwise\"></span>"
+  },
+  {
+   "name": "arrow.up.circle.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/arrow.up.circle.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"arrow.up.circle.fill\"></span>"
+  },
+  {
+   "name": "arrow.up.right.square",
+   "group": "Symbols",
+   "file": "symbols/Symbols/arrow.up.right.square.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"arrow.up.right.square\"></span>"
+  },
+  {
+   "name": "bell",
+   "group": "Symbols",
+   "file": "symbols/Symbols/bell.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bell\"></span>"
+  },
+  {
+   "name": "bolt.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/bolt.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bolt.fill\"></span>"
+  },
+  {
+   "name": "bubble.left",
+   "group": "Symbols",
+   "file": "symbols/Symbols/bubble.left.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bubble.left\"></span>"
+  },
+  {
+   "name": "calendar",
+   "group": "Symbols",
+   "file": "symbols/Symbols/calendar.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar\"></span>"
+  },
+  {
+   "name": "camera",
+   "group": "Symbols",
+   "file": "symbols/Symbols/camera.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"camera\"></span>"
+  },
+  {
+   "name": "checkmark",
+   "group": "Symbols",
+   "file": "symbols/Symbols/checkmark.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"checkmark\"></span>"
+  },
+  {
+   "name": "checkmark.circle.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/checkmark.circle.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"checkmark.circle.fill\"></span>"
+  },
+  {
+   "name": "chevron.down",
+   "group": "Symbols",
+   "file": "symbols/Symbols/chevron.down.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"chevron.down\"></span>"
+  },
+  {
+   "name": "chevron.left",
+   "group": "Symbols",
+   "file": "symbols/Symbols/chevron.left.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"chevron.left\"></span>"
+  },
+  {
+   "name": "chevron.left.forwardslash.chevron.right",
+   "group": "Symbols",
+   "file": "symbols/Symbols/chevron.left.forwardslash.chevron.right.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"chevron.left.forwardslash.chevron.right\"></span>"
+  },
+  {
+   "name": "chevron.right",
+   "group": "Symbols",
+   "file": "symbols/Symbols/chevron.right.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"chevron.right\"></span>"
+  },
+  {
+   "name": "chevron.up",
+   "group": "Symbols",
+   "file": "symbols/Symbols/chevron.up.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"chevron.up\"></span>"
+  },
+  {
+   "name": "document",
+   "group": "Symbols",
+   "file": "symbols/Symbols/document.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"document\"></span>"
+  },
+  {
+   "name": "document.on.document",
+   "group": "Symbols",
+   "file": "symbols/Symbols/document.on.document.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"document.on.document\"></span>"
+  },
+  {
+   "name": "ellipsis",
+   "group": "Symbols",
+   "file": "symbols/Symbols/ellipsis.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"ellipsis\"></span>"
+  },
+  {
+   "name": "ellipsis.circle",
+   "group": "Symbols",
+   "file": "symbols/Symbols/ellipsis.circle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"ellipsis.circle\"></span>"
+  },
+  {
+   "name": "exclamationmark.circle",
+   "group": "Symbols",
+   "file": "symbols/Symbols/exclamationmark.circle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"exclamationmark.circle\"></span>"
+  },
+  {
+   "name": "exclamationmark.triangle",
+   "group": "Symbols",
+   "file": "symbols/Symbols/exclamationmark.triangle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"exclamationmark.triangle\"></span>"
+  },
+  {
+   "name": "gearshape",
+   "group": "Symbols",
+   "file": "symbols/Symbols/gearshape.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"gearshape\"></span>"
+  },
+  {
+   "name": "globe",
+   "group": "Symbols",
+   "file": "symbols/Symbols/globe.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"globe\"></span>"
+  },
+  {
+   "name": "hand.thumbsdown",
+   "group": "Symbols",
+   "file": "symbols/Symbols/hand.thumbsdown.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"hand.thumbsdown\"></span>"
+  },
+  {
+   "name": "hand.thumbsup",
+   "group": "Symbols",
+   "file": "symbols/Symbols/hand.thumbsup.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"hand.thumbsup\"></span>"
+  },
+  {
+   "name": "house",
+   "group": "Symbols",
+   "file": "symbols/Symbols/house.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"house\"></span>"
+  },
+  {
+   "name": "info.circle",
+   "group": "Symbols",
+   "file": "symbols/Symbols/info.circle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"info.circle\"></span>"
+  },
+  {
+   "name": "line.3.horizontal.decrease",
+   "group": "Symbols",
+   "file": "symbols/Symbols/line.3.horizontal.decrease.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"line.3.horizontal.decrease\"></span>"
+  },
+  {
+   "name": "lock",
+   "group": "Symbols",
+   "file": "symbols/Symbols/lock.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"lock\"></span>"
+  },
+  {
+   "name": "magnifyingglass",
+   "group": "Symbols",
+   "file": "symbols/Symbols/magnifyingglass.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"magnifyingglass\"></span>"
+  },
+  {
+   "name": "microphone",
+   "group": "Symbols",
+   "file": "symbols/Symbols/microphone.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"microphone\"></span>"
+  },
+  {
+   "name": "minus",
+   "group": "Symbols",
+   "file": "symbols/Symbols/minus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"minus\"></span>"
+  },
+  {
+   "name": "moon",
+   "group": "Symbols",
+   "file": "symbols/Symbols/moon.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"moon\"></span>"
+  },
+  {
+   "name": "paperclip",
+   "group": "Symbols",
+   "file": "symbols/Symbols/paperclip.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"paperclip\"></span>"
+  },
+  {
+   "name": "paperplane.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/paperplane.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"paperplane.fill\"></span>"
+  },
+  {
+   "name": "pencil",
+   "group": "Symbols",
+   "file": "symbols/Symbols/pencil.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"pencil\"></span>"
+  },
+  {
+   "name": "person",
+   "group": "Symbols",
+   "file": "symbols/Symbols/person.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"person\"></span>"
+  },
+  {
+   "name": "photo",
+   "group": "Symbols",
+   "file": "symbols/Symbols/photo.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"photo\"></span>"
+  },
+  {
+   "name": "plus",
+   "group": "Symbols",
+   "file": "symbols/Symbols/plus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"plus\"></span>"
+  },
+  {
+   "name": "sidebar.left",
+   "group": "Symbols",
+   "file": "symbols/Symbols/sidebar.left.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"sidebar.left\"></span>"
+  },
+  {
+   "name": "sparkles",
+   "group": "Symbols",
+   "file": "symbols/Symbols/sparkles.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"sparkles\"></span>"
+  },
+  {
+   "name": "speaker.wave.2",
+   "group": "Symbols",
+   "file": "symbols/Symbols/speaker.wave.2.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"speaker.wave.2\"></span>"
+  },
+  {
+   "name": "square.and.arrow.down",
+   "group": "Symbols",
+   "file": "symbols/Symbols/square.and.arrow.down.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"square.and.arrow.down\"></span>"
+  },
+  {
+   "name": "square.and.arrow.up",
+   "group": "Symbols",
+   "file": "symbols/Symbols/square.and.arrow.up.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"square.and.arrow.up\"></span>"
+  },
+  {
+   "name": "square.and.pencil",
+   "group": "Symbols",
+   "file": "symbols/Symbols/square.and.pencil.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"square.and.pencil\"></span>"
+  },
+  {
+   "name": "star",
+   "group": "Symbols",
+   "file": "symbols/Symbols/star.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"star\"></span>"
+  },
+  {
+   "name": "stop.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/stop.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"stop.fill\"></span>"
+  },
+  {
+   "name": "trash",
+   "group": "Symbols",
+   "file": "symbols/Symbols/trash.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"trash\"></span>"
+  },
+  {
+   "name": "waveform",
+   "group": "Symbols",
+   "file": "symbols/Symbols/waveform.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"waveform\"></span>"
+  },
+  {
+   "name": "xmark",
+   "group": "Symbols",
+   "file": "symbols/Symbols/xmark.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"xmark\"></span>"
+  },
+  {
+   "name": "xmark.circle.fill",
+   "group": "Symbols",
+   "file": "symbols/Symbols/xmark.circle.fill.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"xmark.circle.fill\"></span>"
+  },
+  {
+   "name": "1.calendar",
+   "group": "Calendar",
+   "file": "symbols/Calendar/1.calendar.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"1.calendar\"></span>"
+  },
+  {
+   "name": "alarm",
+   "group": "Calendar",
+   "file": "symbols/Calendar/alarm.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"alarm\"></span>"
+  },
+  {
+   "name": "bell.badge",
+   "group": "Calendar",
+   "file": "symbols/Calendar/bell.badge.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bell.badge\"></span>"
+  },
+  {
+   "name": "bell.slash",
+   "group": "Calendar",
+   "file": "symbols/Calendar/bell.slash.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bell.slash\"></span>"
+  },
+  {
+   "name": "birthday.cake",
+   "group": "Calendar",
+   "file": "symbols/Calendar/birthday.cake.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"birthday.cake\"></span>"
+  },
+  {
+   "name": "calendar.and.person",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.and.person.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.and.person\"></span>"
+  },
+  {
+   "name": "calendar.badge.checkmark",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.badge.checkmark.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.badge.checkmark\"></span>"
+  },
+  {
+   "name": "calendar.badge.clock",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.badge.clock.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.badge.clock\"></span>"
+  },
+  {
+   "name": "calendar.badge.exclamationmark",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.badge.exclamationmark.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.badge.exclamationmark\"></span>"
+  },
+  {
+   "name": "calendar.badge.minus",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.badge.minus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.badge.minus\"></span>"
+  },
+  {
+   "name": "calendar.badge.plus",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.badge.plus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.badge.plus\"></span>"
+  },
+  {
+   "name": "calendar.circle",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.circle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.circle\"></span>"
+  },
+  {
+   "name": "calendar.day.timeline.left",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.day.timeline.left.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.day.timeline.left\"></span>"
+  },
+  {
+   "name": "calendar.day.timeline.right",
+   "group": "Calendar",
+   "file": "symbols/Calendar/calendar.day.timeline.right.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"calendar.day.timeline.right\"></span>"
+  },
+  {
+   "name": "checklist",
+   "group": "Calendar",
+   "file": "symbols/Calendar/checklist.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"checklist\"></span>"
+  },
+  {
+   "name": "clock",
+   "group": "Calendar",
+   "file": "symbols/Calendar/clock.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"clock\"></span>"
+  },
+  {
+   "name": "clock.arrow.trianglehead.counterclockwise.rotate.90",
+   "group": "Calendar",
+   "file": "symbols/Calendar/clock.arrow.trianglehead.counterclockwise.rotate.90.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"clock.arrow.trianglehead.counterclockwise.rotate.90\"></span>"
+  },
+  {
+   "name": "deskclock",
+   "group": "Calendar",
+   "file": "symbols/Calendar/deskclock.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"deskclock\"></span>"
+  },
+  {
+   "name": "envelope",
+   "group": "Calendar",
+   "file": "symbols/Calendar/envelope.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"envelope\"></span>"
+  },
+  {
+   "name": "flag",
+   "group": "Calendar",
+   "file": "symbols/Calendar/flag.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"flag\"></span>"
+  },
+  {
+   "name": "gift",
+   "group": "Calendar",
+   "file": "symbols/Calendar/gift.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"gift\"></span>"
+  },
+  {
+   "name": "globe.badge.clock",
+   "group": "Calendar",
+   "file": "symbols/Calendar/globe.badge.clock.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"globe.badge.clock\"></span>"
+  },
+  {
+   "name": "hourglass",
+   "group": "Calendar",
+   "file": "symbols/Calendar/hourglass.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"hourglass\"></span>"
+  },
+  {
+   "name": "list.bullet",
+   "group": "Calendar",
+   "file": "symbols/Calendar/list.bullet.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"list.bullet\"></span>"
+  },
+  {
+   "name": "location",
+   "group": "Calendar",
+   "file": "symbols/Calendar/location.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"location\"></span>"
+  },
+  {
+   "name": "party.popper",
+   "group": "Calendar",
+   "file": "symbols/Calendar/party.popper.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"party.popper\"></span>"
+  },
+  {
+   "name": "person.2",
+   "group": "Calendar",
+   "file": "symbols/Calendar/person.2.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"person.2\"></span>"
+  },
+  {
+   "name": "person.badge.plus",
+   "group": "Calendar",
+   "file": "symbols/Calendar/person.badge.plus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"person.badge.plus\"></span>"
+  },
+  {
+   "name": "phone",
+   "group": "Calendar",
+   "file": "symbols/Calendar/phone.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"phone\"></span>"
+  },
+  {
+   "name": "pin",
+   "group": "Calendar",
+   "file": "symbols/Calendar/pin.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"pin\"></span>"
+  },
+  {
+   "name": "rectangle.split.3x1",
+   "group": "Calendar",
+   "file": "symbols/Calendar/rectangle.split.3x1.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"rectangle.split.3x1\"></span>"
+  },
+  {
+   "name": "repeat",
+   "group": "Calendar",
+   "file": "symbols/Calendar/repeat.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"repeat\"></span>"
+  },
+  {
+   "name": "square.grid.3x3",
+   "group": "Calendar",
+   "file": "symbols/Calendar/square.grid.3x3.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"square.grid.3x3\"></span>"
+  },
+  {
+   "name": "text.badge.plus",
+   "group": "Calendar",
+   "file": "symbols/Calendar/text.badge.plus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"text.badge.plus\"></span>"
+  },
+  {
+   "name": "text.pad.header",
+   "group": "Calendar",
+   "file": "symbols/Calendar/text.pad.header.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"text.pad.header\"></span>"
+  },
+  {
+   "name": "timer",
+   "group": "Calendar",
+   "file": "symbols/Calendar/timer.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"timer\"></span>"
+  },
+  {
+   "name": "video",
+   "group": "Calendar",
+   "file": "symbols/Calendar/video.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"video\"></span>"
+  },
+  {
+   "name": "airplane",
+   "group": "Travel",
+   "file": "symbols/Travel/airplane.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"airplane\"></span>"
+  },
+  {
+   "name": "airplane.arrival",
+   "group": "Travel",
+   "file": "symbols/Travel/airplane.arrival.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"airplane.arrival\"></span>"
+  },
+  {
+   "name": "airplane.departure",
+   "group": "Travel",
+   "file": "symbols/Travel/airplane.departure.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"airplane.departure\"></span>"
+  },
+  {
+   "name": "airplane.landed",
+   "group": "Travel",
+   "file": "symbols/Travel/airplane.landed.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"airplane.landed\"></span>"
+  },
+  {
+   "name": "airplaneseat",
+   "group": "Travel",
+   "file": "symbols/Travel/airplaneseat.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"airplaneseat\"></span>"
+  },
+  {
+   "name": "banknote",
+   "group": "Travel",
+   "file": "symbols/Travel/banknote.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"banknote\"></span>"
+  },
+  {
+   "name": "beach.umbrella",
+   "group": "Travel",
+   "file": "symbols/Travel/beach.umbrella.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"beach.umbrella\"></span>"
+  },
+  {
+   "name": "bed.double",
+   "group": "Travel",
+   "file": "symbols/Travel/bed.double.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bed.double\"></span>"
+  },
+  {
+   "name": "bicycle",
+   "group": "Travel",
+   "file": "symbols/Travel/bicycle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bicycle\"></span>"
+  },
+  {
+   "name": "binoculars",
+   "group": "Travel",
+   "file": "symbols/Travel/binoculars.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"binoculars\"></span>"
+  },
+  {
+   "name": "building.2",
+   "group": "Travel",
+   "file": "symbols/Travel/building.2.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"building.2\"></span>"
+  },
+  {
+   "name": "bus",
+   "group": "Travel",
+   "file": "symbols/Travel/bus.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"bus\"></span>"
+  },
+  {
+   "name": "car",
+   "group": "Travel",
+   "file": "symbols/Travel/car.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"car\"></span>"
+  },
+  {
+   "name": "car.ferry",
+   "group": "Travel",
+   "file": "symbols/Travel/car.ferry.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"car.ferry\"></span>"
+  },
+  {
+   "name": "clock.badge.airplane",
+   "group": "Travel",
+   "file": "symbols/Travel/clock.badge.airplane.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"clock.badge.airplane\"></span>"
+  },
+  {
+   "name": "cloud.rain",
+   "group": "Travel",
+   "file": "symbols/Travel/cloud.rain.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"cloud.rain\"></span>"
+  },
+  {
+   "name": "cloud.sun",
+   "group": "Travel",
+   "file": "symbols/Travel/cloud.sun.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"cloud.sun\"></span>"
+  },
+  {
+   "name": "creditcard",
+   "group": "Travel",
+   "file": "symbols/Travel/creditcard.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"creditcard\"></span>"
+  },
+  {
+   "name": "cup.and.saucer",
+   "group": "Travel",
+   "file": "symbols/Travel/cup.and.saucer.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"cup.and.saucer\"></span>"
+  },
+  {
+   "name": "dollarsign.arrow.trianglehead.counterclockwise.rotate.90",
+   "group": "Travel",
+   "file": "symbols/Travel/dollarsign.arrow.trianglehead.counterclockwise.rotate.90.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"dollarsign.arrow.trianglehead.counterclockwise.rotate.90\"></span>"
+  },
+  {
+   "name": "ferry",
+   "group": "Travel",
+   "file": "symbols/Travel/ferry.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"ferry\"></span>"
+  },
+  {
+   "name": "figure.walk",
+   "group": "Travel",
+   "file": "symbols/Travel/figure.walk.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"figure.walk\"></span>"
+  },
+  {
+   "name": "figure.walk.suitcase.rolling",
+   "group": "Travel",
+   "file": "symbols/Travel/figure.walk.suitcase.rolling.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"figure.walk.suitcase.rolling\"></span>"
+  },
+  {
+   "name": "fork.knife",
+   "group": "Travel",
+   "file": "symbols/Travel/fork.knife.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"fork.knife\"></span>"
+  },
+  {
+   "name": "fuelpump",
+   "group": "Travel",
+   "file": "symbols/Travel/fuelpump.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"fuelpump\"></span>"
+  },
+  {
+   "name": "globe.americas",
+   "group": "Travel",
+   "file": "symbols/Travel/globe.americas.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"globe.americas\"></span>"
+  },
+  {
+   "name": "globe.asia.australia",
+   "group": "Travel",
+   "file": "symbols/Travel/globe.asia.australia.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"globe.asia.australia\"></span>"
+  },
+  {
+   "name": "globe.europe.africa",
+   "group": "Travel",
+   "file": "symbols/Travel/globe.europe.africa.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"globe.europe.africa\"></span>"
+  },
+  {
+   "name": "house.lodge",
+   "group": "Travel",
+   "file": "symbols/Travel/house.lodge.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"house.lodge\"></span>"
+  },
+  {
+   "name": "list.clipboard",
+   "group": "Travel",
+   "file": "symbols/Travel/list.clipboard.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"list.clipboard\"></span>"
+  },
+  {
+   "name": "location.north",
+   "group": "Travel",
+   "file": "symbols/Travel/location.north.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"location.north\"></span>"
+  },
+  {
+   "name": "map",
+   "group": "Travel",
+   "file": "symbols/Travel/map.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"map\"></span>"
+  },
+  {
+   "name": "mappin",
+   "group": "Travel",
+   "file": "symbols/Travel/mappin.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"mappin\"></span>"
+  },
+  {
+   "name": "mappin.and.ellipse",
+   "group": "Travel",
+   "file": "symbols/Travel/mappin.and.ellipse.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"mappin.and.ellipse\"></span>"
+  },
+  {
+   "name": "mountain.2",
+   "group": "Travel",
+   "file": "symbols/Travel/mountain.2.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"mountain.2\"></span>"
+  },
+  {
+   "name": "person.text.rectangle",
+   "group": "Travel",
+   "file": "symbols/Travel/person.text.rectangle.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"person.text.rectangle\"></span>"
+  },
+  {
+   "name": "powerplug",
+   "group": "Travel",
+   "file": "symbols/Travel/powerplug.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"powerplug\"></span>"
+  },
+  {
+   "name": "qrcode",
+   "group": "Travel",
+   "file": "symbols/Travel/qrcode.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"qrcode\"></span>"
+  },
+  {
+   "name": "sailboat",
+   "group": "Travel",
+   "file": "symbols/Travel/sailboat.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"sailboat\"></span>"
+  },
+  {
+   "name": "signpost.right",
+   "group": "Travel",
+   "file": "symbols/Travel/signpost.right.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"signpost.right\"></span>"
+  },
+  {
+   "name": "snowflake",
+   "group": "Travel",
+   "file": "symbols/Travel/snowflake.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"snowflake\"></span>"
+  },
+  {
+   "name": "suitcase",
+   "group": "Travel",
+   "file": "symbols/Travel/suitcase.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"suitcase\"></span>"
+  },
+  {
+   "name": "suitcase.rolling",
+   "group": "Travel",
+   "file": "symbols/Travel/suitcase.rolling.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"suitcase.rolling\"></span>"
+  },
+  {
+   "name": "sun.max",
+   "group": "Travel",
+   "file": "symbols/Travel/sun.max.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"sun.max\"></span>"
+  },
+  {
+   "name": "tent",
+   "group": "Travel",
+   "file": "symbols/Travel/tent.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"tent\"></span>"
+  },
+  {
+   "name": "thermometer.medium",
+   "group": "Travel",
+   "file": "symbols/Travel/thermometer.medium.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"thermometer.medium\"></span>"
+  },
+  {
+   "name": "ticket",
+   "group": "Travel",
+   "file": "symbols/Travel/ticket.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"ticket\"></span>"
+  },
+  {
+   "name": "train.side.front.car",
+   "group": "Travel",
+   "file": "symbols/Travel/train.side.front.car.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"train.side.front.car\"></span>"
+  },
+  {
+   "name": "tram",
+   "group": "Travel",
+   "file": "symbols/Travel/tram.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"tram\"></span>"
+  },
+  {
+   "name": "translate",
+   "group": "Travel",
+   "file": "symbols/Travel/translate.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"translate\"></span>"
+  },
+  {
+   "name": "umbrella",
+   "group": "Travel",
+   "file": "symbols/Travel/umbrella.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"umbrella\"></span>"
+  },
+  {
+   "name": "wallet.pass",
+   "group": "Travel",
+   "file": "symbols/Travel/wallet.pass.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"wallet.pass\"></span>"
+  },
+  {
+   "name": "wifi",
+   "group": "Travel",
+   "file": "symbols/Travel/wifi.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"wifi\"></span>"
+  },
+  {
+   "name": "wineglass",
+   "group": "Travel",
+   "file": "symbols/Travel/wineglass.svg",
+   "markup": "<span class=\"sf\" data-symbol=\"wineglass\"></span>"
+  }
+ ]
+}

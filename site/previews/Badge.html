@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>html,body{background:var(--color-bg)}</style>
+<meta charset="utf-8"><title>Badge — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="col" style="gap:12px">
+<div class="row"><span class="ar-badge ar-badge--accent">Local-first</span><span class="ar-badge ar-badge--neutral">MIT</span><span class="ar-badge ar-badge--success"><span class="sf" data-symbol="checkmark.circle.fill"></span>Connected</span><span class="ar-badge ar-badge--warning"><span class="sf" data-symbol="exclamationmark.triangle"></span>Rate limited</span><span class="ar-badge ar-badge--danger"><span class="sf" data-symbol="exclamationmark.circle"></span>Key invalid</span></div>
+<div class="row"><span class="ar-badge ar-badge--accent ar-badge--mono">cargo install arlo</span><span class="ar-count">3</span><span class="ar-count">128</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>html,body{background:var(--color-bg)}</style>
+
+<meta charset="utf-8">
+<title>Arlo Design System</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--color-bg); color:var(--color-text-primary); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .a { fill:var(--color-accent); }
+  .d { fill:var(--color-accent-hover); }
+  .ink { fill:var(--color-text-primary); }
+  .t { fill:var(--color-bg-tertiary); }
+  .w { fill:var(--color-bg); }
+  .blk { rx:var(--radius-lg); }
+  .tile { rx:var(--radius-mark); }
+  .words { position:absolute; left:var(--space300); bottom:var(--space300); max-width:440px; }
+  .name { margin:0; font-size:64px; line-height:.95; font-weight:700; letter-spacing:-0.03em; color:var(--color-text-primary); }
+  .tag { margin:var(--space200) 0 0; font-size:14px; line-height:20px; letter-spacing:.25px; color:var(--color-text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      color-accent slab 160x256 bled off the top (the identity, largest) · color-accent-hover 176x88 bleeding off the top-right · color-bg-tertiary 112x88 tint · color-text-primary 288x168 ink bleeding right, bottom space200 above the edge (≈40% of 960x288)
+  arrangement one tall accent slab with satellites, space200 gutters, all bottoms on one line
+  pattern     brand-mark tiles, from "each project = a white glyph in the shared rx-7 rounded square": 24px tiles at a space400 pitch in color-accent across the ink block (three cut out in color-bg), three white tiles cut into the slab
+  scales      sides in space100 multiples; gutters space200; pitch space400 (M3 8dp scale); corners radius-lg on blocks, radius-mark on tiles
+-->
+<rect class="a blk" x="16" y="-16" width="160" height="256" rx="16"/>
+<rect class="t blk" x="192" y="-16" width="112" height="104" rx="16"/>
+<rect class="d blk" x="320" y="-16" width="176" height="104" rx="16"/>
+<rect class="ink blk" x="192" y="104" width="304" height="168" rx="16"/>
+<rect class="a tile" x="208" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="240" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="272" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="304" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="336" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="368" y="120" width="24" height="24" rx="7"/><rect class="w tile" x="400" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="432" y="120" width="24" height="24" rx="7"/><rect class="a tile" x="208" y="152" width="24" height="24" rx="7"/><rect class="w tile" x="240" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="272" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="304" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="336" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="368" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="400" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="432" y="152" width="24" height="24" rx="7"/><rect class="a tile" x="208" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="240" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="272" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="304" y="184" width="24" height="24" rx="7"/><rect class="w tile" x="336" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="368" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="400" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="432" y="184" width="24" height="24" rx="7"/><rect class="a tile" x="208" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="240" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="272" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="304" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="336" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="368" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="400" y="216" width="24" height="24" rx="7"/><rect class="a tile" x="432" y="216" width="24" height="24" rx="7"/>
+<rect class="w tile" x="40" y="200" width="24" height="24" rx="7"/><rect class="w tile" x="72" y="200" width="24" height="24" rx="7"/><rect class="w tile" x="104" y="200" width="24" height="24" rx="7"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Arlo Design<br>System</h1>
+<p class="tag">One indigo accent on Material's 8dp grid, drawn with SF Symbols and Apple's components.</p>
+</div>
+</div>
+</body>
+</html>

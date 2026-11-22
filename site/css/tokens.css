@@ -1,0 +1,190 @@
+/* Arlo Design System — generated from tokens.json. Light by default; dark via [data-theme="dark"] or the OS setting. */
+:root, [data-theme="light"] {
+  --color-accent: #5856D6;
+  --color-accent-hover: #4745B5;
+  --color-accent-light: rgba(88,86,214,0.08);
+  --color-accent-glow: rgba(88,86,214,0.15);
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #64648c;
+  --color-text-tertiary: #8e8eaa;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8f8fc;
+  --color-bg-tertiary: #f0f0f8;
+  --color-bg-elevated: #ffffff;
+  --color-segment: #ffffff;
+  --color-border: rgba(0,0,0,0.06);
+  --color-border-strong: rgba(0,0,0,0.1);
+  --color-success: #1f9d6b;
+  --color-success-light: rgba(31,157,107,0.08);
+  --color-warning: #c07a12;
+  --color-warning-light: rgba(192,122,18,0.08);
+  --color-danger: #d1435b;
+  --color-danger-light: rgba(209,67,91,0.08);
+  --color-scrim: rgba(26,26,46,0.4);
+  --text-on-accent: #ffffff;
+  --color-bar: rgba(255,255,255,0.82);
+  --color-fill-hover: #e6e6f2;
+  --surface-page: var(--color-bg);
+  --surface-section: var(--color-bg-secondary);
+  --surface-card: var(--color-bg);
+  --surface-sunken: var(--color-bg-tertiary);
+  --text-body: var(--color-text-primary);
+  --text-muted: var(--color-text-secondary);
+  --text-faint: var(--color-text-tertiary);
+  --status-info: var(--color-accent);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.1);
+  --shadow-accent: 0 4px 16px rgba(88,86,214,0.3);
+  --ring-accent: 0 0 0 1px rgba(88,86,214,0.15);
+  --shadow-focus: 0 0 0 2px #ffffff, 0 0 0 4px #5856D6;
+  --halo-focus: 0 0 0 3px rgba(88,86,214,0.08);
+}
+[data-theme="dark"] {
+  --color-accent: #8b89f4;
+  --color-accent-hover: #a9a8f8;
+  --color-accent-light: rgba(139,137,244,0.16);
+  --color-accent-glow: rgba(139,137,244,0.3);
+  --color-text-primary: #ececf6;
+  --color-text-secondary: #a6a6c4;
+  --color-text-tertiary: #7a7a9e;
+  --color-bg: #1b1b29;
+  --color-bg-secondary: #131320;
+  --color-bg-tertiary: #33334a;
+  --color-bg-elevated: #252536;
+  --color-segment: #55556f;
+  --color-border: rgba(255,255,255,0.08);
+  --color-border-strong: rgba(255,255,255,0.16);
+  --color-success: #3dbf8a;
+  --color-success-light: rgba(61,191,138,0.14);
+  --color-warning: #e0a33f;
+  --color-warning-light: rgba(224,163,63,0.14);
+  --color-danger: #f27a8e;
+  --color-danger-light: rgba(242,122,142,0.14);
+  --color-scrim: rgba(0,0,0,0.6);
+  --text-on-accent: #13131f;
+  --color-bar: rgba(27,27,41,0.82);
+  --color-fill-hover: #3e3e57;
+  --surface-page: var(--color-bg);
+  --surface-section: var(--color-bg-secondary);
+  --surface-card: var(--color-bg);
+  --surface-sunken: var(--color-bg-tertiary);
+  --text-body: var(--color-text-primary);
+  --text-muted: var(--color-text-secondary);
+  --text-faint: var(--color-text-tertiary);
+  --status-info: var(--color-accent);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.45);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.55);
+  --shadow-accent: 0 4px 16px rgba(139,137,244,0.3);
+  --ring-accent: 0 0 0 1px rgba(139,137,244,0.3);
+  --shadow-focus: 0 0 0 2px #1b1b29, 0 0 0 4px #8b89f4;
+  --halo-focus: 0 0 0 3px rgba(139,137,244,0.16);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-accent: #8b89f4;
+    --color-accent-hover: #a9a8f8;
+    --color-accent-light: rgba(139,137,244,0.16);
+    --color-accent-glow: rgba(139,137,244,0.3);
+    --color-text-primary: #ececf6;
+    --color-text-secondary: #a6a6c4;
+    --color-text-tertiary: #7a7a9e;
+    --color-bg: #1b1b29;
+    --color-bg-secondary: #131320;
+    --color-bg-tertiary: #33334a;
+    --color-bg-elevated: #252536;
+    --color-segment: #55556f;
+    --color-border: rgba(255,255,255,0.08);
+    --color-border-strong: rgba(255,255,255,0.16);
+    --color-success: #3dbf8a;
+    --color-success-light: rgba(61,191,138,0.14);
+    --color-warning: #e0a33f;
+    --color-warning-light: rgba(224,163,63,0.14);
+    --color-danger: #f27a8e;
+    --color-danger-light: rgba(242,122,142,0.14);
+    --color-scrim: rgba(0,0,0,0.6);
+    --text-on-accent: #13131f;
+    --color-bar: rgba(27,27,41,0.82);
+    --color-fill-hover: #3e3e57;
+    --surface-page: var(--color-bg);
+    --surface-section: var(--color-bg-secondary);
+    --surface-card: var(--color-bg);
+    --surface-sunken: var(--color-bg-tertiary);
+    --text-body: var(--color-text-primary);
+    --text-muted: var(--color-text-secondary);
+    --text-faint: var(--color-text-tertiary);
+    --status-info: var(--color-accent);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.45);
+    --shadow-xl: 0 16px 48px rgba(0,0,0,0.55);
+    --shadow-accent: 0 4px 16px rgba(139,137,244,0.3);
+    --ring-accent: 0 0 0 1px rgba(139,137,244,0.3);
+    --shadow-focus: 0 0 0 2px #1b1b29, 0 0 0 4px #8b89f4;
+    --halo-focus: 0 0 0 3px rgba(139,137,244,0.16);
+    color-scheme: dark;
+  }
+}
+:root {
+  --space0: 0px;
+  --space25: 2px;
+  --space50: 4px;
+  --space75: 6px;
+  --space100: 8px;
+  --space125: 10px;
+  --space200: 16px;
+  --space300: 24px;
+  --space400: 32px;
+  --space500: 40px;
+  --space600: 48px;
+  --space700: 56px;
+  --space800: 64px;
+  --space900: 72px;
+  --margin-compact: 16px;
+  --margin-medium: 24px;
+  --pane-spacer: 24px;
+  --section-padding: 96px;
+  --container-max: 1120px;
+  --radius-none: 0px;
+  --radius-xs: 5px;
+  --radius-mark: 7px;
+  --radius-sm: 8px;
+  --radius-button: 12px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --control-sm: 28px;
+  --control-md: 36px;
+  --control-lg: 44px;
+  --symbol-sm: 16px;
+  --symbol-md: 20px;
+  --symbol-lg: 24px;
+  --nav-height: 64px;
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "JetBrains Mono", ui-monospace, monospace;
+}
+.display-large { font-family: var(--font-sans); font-size: 57px; line-height: 64px; font-weight: 400; letter-spacing: -0.25px; }
+.display-medium { font-family: var(--font-sans); font-size: 45px; line-height: 52px; font-weight: 400; letter-spacing: 0px; }
+.display-small { font-family: var(--font-sans); font-size: 36px; line-height: 44px; font-weight: 400; letter-spacing: 0px; }
+.headline-large { font-family: var(--font-sans); font-size: 32px; line-height: 40px; font-weight: 400; letter-spacing: 0px; }
+.headline-medium { font-family: var(--font-sans); font-size: 28px; line-height: 36px; font-weight: 400; letter-spacing: 0px; }
+.headline-small { font-family: var(--font-sans); font-size: 24px; line-height: 32px; font-weight: 400; letter-spacing: 0px; }
+.title-large { font-family: var(--font-sans); font-size: 22px; line-height: 28px; font-weight: 400; letter-spacing: 0px; }
+.title-medium { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 0.15px; }
+.title-small { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: 0.1px; }
+.body-large { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: 0.5px; }
+.body-medium { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 400; letter-spacing: 0.25px; }
+.body-small { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.4px; }
+.label-large { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: 0.1px; }
+.label-medium { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; }
+.label-small { font-family: var(--font-sans); font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; }
+.display-large-emphasized { font-family: var(--font-sans); font-size: 57px; line-height: 64px; font-weight: 700; letter-spacing: -1.7px; }
+.headline-large-emphasized { font-family: var(--font-sans); font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.64px; }
+.title-large-emphasized { font-family: var(--font-sans); font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.22px; }
+.title-medium-emphasized { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.16px; }
+.code-pill { font-family: var(--font-mono); font-size: 13px; line-height: 1.3; font-weight: 500; letter-spacing: 0px; }

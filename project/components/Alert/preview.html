@@ -1,0 +1,27 @@
+<!-- @dsCard group="Presentation" height=300 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Alert — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="ar-scrim" style="border-radius:var(--radius-md);gap:24px;flex-wrap:wrap">
+<div class="ar-alert">
+  <div class="ar-alert__icon"><span class="ar-symbol-tile ar-symbol-tile--lg" style="background:var(--color-danger-light);color:var(--color-danger)"><span class="sf " style="--sf:url(/_blob/3e846d950222ffa09a29111fe68fb69f)"></span></span></div>
+  <p class="ar-alert__title">Delete this chat?</p>
+  <p class="ar-alert__msg">It's removed from this Mac. There's no copy anywhere else, so this can't be undone.</p>
+  <div class="ar-alert__actions"><button class="ar-btn ar-btn--gray">Cancel</button><button class="ar-btn ar-btn--destructive">Delete</button></div>
+</div>
+<div class="ar-alert" style="width:280px">
+  <p class="ar-alert__title">Provider unreachable</p>
+  <p class="ar-alert__msg">Check your connection or endpoint, then try again.</p>
+  <div class="ar-alert__actions ar-alert__actions--stacked"><button class="ar-btn ar-btn--gray">Not now</button><button class="ar-btn ar-btn--filled">Try again</button></div>
+</div>
+</div>
+</body>
+</html>

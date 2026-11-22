@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · Arlo Design System</title>
+<link rel="icon" href="../assets/logos/favicon.svg">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<link rel="stylesheet" href="../css/site.css">
+<script src="../js/site.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <button class="iconbtn menu-btn" id="menu" aria-label="Open navigation"><span class="sf" data-symbol="sidebar.left"></span></button>
+  <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
+  <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
+  <span class="spacer"></span>
+  <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
+</header>
+<div class="shell">
+<nav class="rail" aria-label="Pages"><h4>Get started</h4><a href="../index.html">Overview</a><h4>Foundations</h4><a href="../foundations/content.html">Content</a><a href="../foundations/color.html">Color</a><a href="../foundations/typography.html">Typography</a><a href="../foundations/spacing.html">Spacing and layout</a><a href="../foundations/shape.html">Shape</a><a href="../foundations/elevation.html">Elevation and motion</a><a href="../foundations/iconography.html">Iconography</a><h4>Symbols</h4><a href="../symbols/interface.html">Symbols</a><a href="../symbols/calendar.html">Calendar</a><a href="../symbols/travel.html">Travel</a><a href="../symbols/logos.html">Logos</a><h4>Components</h4><a href="../components/index.html">All components</a><a href="../components/Button.html">Button</a><a href="../components/Menu.html" class="on">Menu</a><a href="../components/PopUpButton.html">Pop-up button</a><a href="../components/Checkbox.html">Checkbox</a><a href="../components/RadioButton.html">Radio button</a><a href="../components/SegmentedControl.html">Segmented control</a><a href="../components/Slider.html">Slider</a><a href="../components/Stepper.html">Stepper</a><a href="../components/TextField.html">Text field</a><a href="../components/Toggle.html">Toggle</a><a href="../components/NavigationBar.html">Navigation bar</a><a href="../components/PageControl.html">Page control</a><a href="../components/SearchField.html">Search field</a><a href="../components/Sidebar.html">Sidebar</a><a href="../components/TabBar.html">Tab bar</a><a href="../components/List.html">List</a><a href="../components/Alert.html">Alert</a><a href="../components/Popover.html">Popover</a><a href="../components/Sheet.html">Sheet</a><a href="../components/Badge.html">Badge</a><a href="../components/ProgressIndicator.html">Progress indicator</a><a href="../components/Symbol.html">Symbol</a></nav>
+<main>
+<section class="hero"><p class="eyebrow">Menus and actions</p><h1>Menu</h1><p class="lede">A menu lists actions or options in a temporary panel opened from a button, a pop-up button or a right-click (Apple: menus, context menus, pull-down buttons).</p></section>
+<div class="frame"><div class="frame-bar">Preview</div><iframe title="Menu preview" data-src="../previews/Menu.html" src="../previews/Menu.html" style="height:368px" data-fit></iframe></div><details class="code-box"><summary>HTML</summary><pre class="code">&lt;div class=&quot;row&quot; style=&quot;align-items:flex-start;gap:24px&quot;&gt;
+&lt;div class=&quot;ar-menu&quot;&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;document.on.document&quot;&gt;&lt;/span&gt;Copy&lt;span class=&quot;ar-menu__key&quot;&gt;⌘C&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item ar-menu__item--active&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;arrow.trianglehead.clockwise&quot;&gt;&lt;/span&gt;Regenerate&lt;span class=&quot;ar-menu__key&quot;&gt;⌘R&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;pencil&quot;&gt;&lt;/span&gt;Edit message&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;square.and.arrow.up&quot;&gt;&lt;/span&gt;Share…&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__sep&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item ar-menu__item--destructive&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;trash&quot;&gt;&lt;/span&gt;Delete&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ar-menu&quot;&gt;
+  &lt;div class=&quot;ar-menu__title&quot;&gt;Sort by&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;ar-menu__check&quot;&gt;&lt;span class=&quot;sf sf--sm&quot; data-symbol=&quot;checkmark&quot;&gt;&lt;/span&gt;&lt;/span&gt;Last updated&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;ar-menu__check&quot;&gt;&lt;/span&gt;Name&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__sep&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__title&quot;&gt;Show&lt;/div&gt;
+  &lt;div class=&quot;ar-menu__item&quot;&gt;&lt;span class=&quot;ar-menu__check&quot;&gt;&lt;span class=&quot;sf sf--sm&quot; data-symbol=&quot;checkmark&quot;&gt;&lt;/span&gt;&lt;/span&gt;Pinned first&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- page-level layout helpers used by this example --&gt;
+&lt;style&gt;
+body { margin:0; padding:24px; }
+.row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+.col { display:flex; flex-direction:column; gap:16px; }
+.cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+&lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li>Panel: <code>ar-menu</code>, <code>color-bg-elevated</code> (white in light, lifted in dark), <code>radius-md</code>, <code>color-border</code> hairline, <code>shadow-lg</code>, <code>space50</code> inset.</li><li>Items: <code>ar-menu__item</code>, at least 44px tall (<code>control-lg</code>, Apple's minimum touch target) so a finger can't hit the neighbouring item, <code>label-large</code>-sized text, leading SF Symbol at <code>symbol-sm</code> in <code>color-text-secondary</code>, keyboard shortcut in <code>ar-menu__key</code>. The hovered or keyboard-focused item is <code>ar-menu__item--active</code> (<code>color-accent</code> fill, <code>text-on-accent</code>).</li><li>Pointer-only desktop UI may use <code>ar-menu--compact</code> (28px items, <code>control-sm</code>); anything that can be touched keeps the 44px default.</li><li>Group with <code>ar-menu__sep</code> and optional <code>ar-menu__title</code>. Put destructive items last, after a separator, with <code>ar-menu__item--destructive</code>.</li><li>Selection menus show a <code>checkmark</code> in <code>ar-menu__check</code>; keep the column even when unchecked.</li></ul>
+<p><strong>The consumer provides:</strong> the items (label, symbol, shortcut, handler), the anchor, and dismissal on outside click or Escape. <strong>Don't</strong> nest more than one submenu level or put more than ~12 items in one group.</p></div>
+<p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
+</main>
+</div>
+<div class="toast" id="toast" role="status"><span class="ar-helptag"><span><span class="sf sf--sm" data-symbol="checkmark"></span></span> <span>Copied</span></span></div>
+</body>
+</html>

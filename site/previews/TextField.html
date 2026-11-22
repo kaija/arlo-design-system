@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>html,body{background:var(--color-bg)}</style>
+<meta charset="utf-8"><title>Text field — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="row" style="align-items:flex-start;gap:24px">
+<div class="col" style="width:280px">
+  <label class="ar-field"><span class="ar-field__label">Provider</span><span class="ar-input"><span class="ar-input__ph">e.g. Anthropic</span></span></label>
+  <label class="ar-field"><span class="ar-field__label">API key</span><span class="ar-input ar-input--focus"><span class="sf" data-symbol="lock"></span>sk-ant-•••••••••••</span><span class="ar-field__help">Stored in your Keychain. We never see it.</span></label>
+</div>
+<div class="col" style="width:280px">
+  <label class="ar-field"><span class="ar-field__label">Endpoint</span><span class="ar-input ar-input--error">htps://api.local</span><span class="ar-field__help ar-field__help--error">Enter a URL that starts with https://</span></label>
+  <label class="ar-field"><span class="ar-field__label">System prompt</span><span class="ar-input ar-input--multiline"><span class="ar-input__ph">You are a concise assistant…</span></span></label>
+</div>
+</div>
+</body>
+</html>

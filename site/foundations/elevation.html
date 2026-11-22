@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elevation and motion · Arlo Design System</title>
+<link rel="icon" href="../assets/logos/favicon.svg">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<link rel="stylesheet" href="../css/site.css">
+<script src="../js/site.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <button class="iconbtn menu-btn" id="menu" aria-label="Open navigation"><span class="sf" data-symbol="sidebar.left"></span></button>
+  <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
+  <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html" class="on">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html">Components</a></nav>
+  <span class="spacer"></span>
+  <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
+</header>
+<div class="shell">
+<nav class="rail" aria-label="Pages"><h4>Get started</h4><a href="../index.html">Overview</a><h4>Foundations</h4><a href="../foundations/content.html">Content</a><a href="../foundations/color.html">Color</a><a href="../foundations/typography.html">Typography</a><a href="../foundations/spacing.html">Spacing and layout</a><a href="../foundations/shape.html">Shape</a><a href="../foundations/elevation.html" class="on">Elevation and motion</a><a href="../foundations/iconography.html">Iconography</a><h4>Symbols</h4><a href="../symbols/interface.html">Symbols</a><a href="../symbols/calendar.html">Calendar</a><a href="../symbols/travel.html">Travel</a><a href="../symbols/logos.html">Logos</a><h4>Components</h4><a href="../components/index.html">All components</a><a href="../components/Button.html">Button</a><a href="../components/Menu.html">Menu</a><a href="../components/PopUpButton.html">Pop-up button</a><a href="../components/Checkbox.html">Checkbox</a><a href="../components/RadioButton.html">Radio button</a><a href="../components/SegmentedControl.html">Segmented control</a><a href="../components/Slider.html">Slider</a><a href="../components/Stepper.html">Stepper</a><a href="../components/TextField.html">Text field</a><a href="../components/Toggle.html">Toggle</a><a href="../components/NavigationBar.html">Navigation bar</a><a href="../components/PageControl.html">Page control</a><a href="../components/SearchField.html">Search field</a><a href="../components/Sidebar.html">Sidebar</a><a href="../components/TabBar.html">Tab bar</a><a href="../components/List.html">List</a><a href="../components/Alert.html">Alert</a><a href="../components/Popover.html">Popover</a><a href="../components/Sheet.html">Sheet</a><a href="../components/Badge.html">Badge</a><a href="../components/ProgressIndicator.html">Progress indicator</a><a href="../components/Symbol.html">Symbol</a></nav>
+<main>
+<section class="hero"><p class="eyebrow">Foundations</p><h1>Elevation and motion</h1><p class="lede">Hairlines and tonal layers first, soft shadows second, calm motion.</p></section>
+<div class="prose"><ul><li>Depth comes from tonal layers and hairlines first. Resting cards have no shadow.</li><li><code>shadow-sm</code> for knobs and the selected segment, <code>shadow-md</code> + <code>ring-accent</code> for hovered interactive cards (lift <code>translateY(-2px)</code>), <code>shadow-lg</code> for menus and popovers, <code>shadow-xl</code> for alerts and sheets, <code>shadow-accent</code> for the hovered filled button only.</li><li>Keyboard focus on every control is <code>shadow-focus</code>: a 2px white gap and a solid 2px <code>color-accent</code> ring (5.65:1). Text fields focus with a <code>color-accent</code> border plus Arlo's soft <code>halo-focus</code>.</li><li>Blur and translucency appear only on bars: navigation bar, tab bar and the site nav (<code>rgba(255,255,255,.82)</code> + <code>saturate(180%) blur(20px)</code>).</li><li>Motion: 150ms ease for colour and opacity, 250ms ease for transforms and toggles. No bounces, no springs, no scale on press.</li></ul></div><div class="section"><h2>Shadow tokens</h2><p class="sub">Shown on <code>color-bg-elevated</code>; switch the theme to see the dark values.</p><div class="shadows"><div><div class="shadow-box" style="box-shadow:var(--shadow-sm)"></div><div class="tok"><b>shadow-sm</b><span>Toggle knobs, slider thumbs, the selected segment.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--shadow-md)"></div><div class="tok"><b>shadow-md</b><span>Hovered cards (with ring-accent), popovers on light grounds.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--shadow-lg)"></div><div class="tok"><b>shadow-lg</b><span>Menus, popovers, toasts.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--shadow-xl)"></div><div class="tok"><b>shadow-xl</b><span>Alerts and sheets.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--shadow-accent)"></div><div class="tok"><b>shadow-accent</b><span>Hovered filled (accent) button only.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--ring-accent)"></div><div class="tok"><b>ring-accent</b><span>1px glow ring paired with shadow-md on hovered, interactive cards.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--shadow-focus)"></div><div class="tok"><b>shadow-focus</b><span>Keyboard focus ring on every control: a 2px white gap then a solid 2px accent ring (5.65:1 on color-bg). Added: the source's 8% halo is too faint to meet 3:1.</span></div></div><div><div class="shadow-box" style="box-shadow:var(--halo-focus)"></div><div class="tok"><b>halo-focus</b><span>Arlo's soft halo around a focused text field, always together with a color-accent border.</span></div></div></div></div>
+<p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
+</main>
+</div>
+<div class="toast" id="toast" role="status"><span class="ar-helptag"><span><span class="sf sf--sm" data-symbol="checkmark"></span></span> <span>Copied</span></span></div>
+</body>
+</html>

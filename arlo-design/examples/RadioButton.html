@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../components/components.css">
+<link rel="stylesheet" href="../symbols/symbols.css">
+<style>html,body{background:var(--color-bg)}</style>
+<meta charset="utf-8"><title>Radio button — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="col" style="gap:12px" role="radiogroup">
+<span class="ar-radio ar-radio--on"><span class="ar-radio__dot"></span>Run locally (Arlo Rust)</span>
+<span class="ar-radio"><span class="ar-radio__dot"></span>Use my provider directly</span>
+<span class="ar-radio ar-radio--disabled"><span class="ar-radio__dot"></span>Hosted (not offered)</span>
+</div>
+</body>
+</html>

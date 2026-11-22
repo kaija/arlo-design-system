@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../components/components.css">
+<link rel="stylesheet" href="../symbols/symbols.css">
+<style>html,body{background:var(--color-bg)}</style>
+<meta charset="utf-8"><title>Checkbox — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="col" style="gap:12px">
+<span class="ar-check ar-check--on"><span class="ar-check__box"><span class="sf" data-symbol="checkmark"></span></span>Include tool calls in export</span>
+<span class="ar-check"><span class="ar-check__box"></span>Include system prompt</span>
+<span class="ar-check ar-check--mixed"><span class="ar-check__box"><span class="ar-check__dash"></span></span>All attachments (some selected)</span>
+<span class="ar-check ar-check--disabled"><span class="ar-check__box"></span>Include hidden reasoning</span>
+</div>
+</body>
+</html>

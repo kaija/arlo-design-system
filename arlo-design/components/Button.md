@@ -1,0 +1,94 @@
+# Button
+
+A button starts an action; Arlo buttons follow Apple's styles (filled, tinted, gray, plain) with one fixed 12px corner, `radius-button`.
+
+**Styles.** Use them in this order of emphasis:
+- `ar-btn--filled`: the one primary action on a screen or in a dialog (`color-accent`, hover `color-accent-hover` + `shadow-accent`).
+- `ar-btn--tinted`: a secondary action that should still read as accent (`color-accent-light` fill).
+- `ar-btn--gray`: neutral secondary actions such as Cancel (`color-bg-tertiary`).
+- `ar-btn--outline`: Arlo's original white-with-border secondary button, for marketing pages and toolbars on white.
+- `ar-btn--plain`: low-emphasis and inline actions, toolbar icons.
+- `ar-btn--destructive` / `ar-btn--destructive-plain`: actions that delete or can't be undone.
+
+**Sizes.** `ar-btn--sm` (28, `control-sm`) for toolbars and dense desktop UI, default 36 (`control-md`), `ar-btn--lg` (44, `control-lg`) for touch-first primary actions. Add `ar-btn--icon` for symbol-only square buttons, which must have an `aria-label`.
+
+**Corner.** Every size uses the same `radius-button`. The token is 12px: Material's full pill and Apple's capsule are deliberately not used, so 36px and 44px buttons stay soft rectangles while 28px buttons come out nearly round.
+
+**The consumer provides:** a `<button>` (or `<a>` for navigation) with a verb label in sentence case, an optional leading SF Symbol (`.sf`, sized by the button), and a disabled state.
+
+**Do:** use one filled button per view. Swap `arrow.up.circle.fill` (submit) to `stop.fill` in the same button while a response streams.
+**Don't:** use title case or ending punctuation, put two filled buttons side by side, or scale on press.
+
+## Markup
+
+Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on the body, then:
+
+```html
+<div class="col">
+<div class="cap">Styles · md (36px)</div>
+<div class="row">
+  <button class="ar-btn ar-btn--filled"><span class="sf" data-symbol="paperplane.fill"></span>Send</button>
+  <button class="ar-btn ar-btn--tinted"><span class="sf" data-symbol="sparkles"></span>Regenerate</button>
+  <button class="ar-btn ar-btn--gray">Cancel</button>
+  <button class="ar-btn ar-btn--outline"><span class="sf" data-symbol="square.and.arrow.down"></span>Download</button>
+  <button class="ar-btn ar-btn--plain">Learn more</button>
+  <button class="ar-btn ar-btn--destructive"><span class="sf" data-symbol="trash"></span>Delete</button>
+  <button class="ar-btn ar-btn--gray ar-btn--icon" aria-label="More"><span class="sf" data-symbol="ellipsis"></span></button>
+  <button class="ar-btn ar-btn--filled ar-btn--disabled" disabled>Disabled</button>
+</div>
+<div class="cap">Sizes · sm 28 · md 36 · lg 44</div>
+<div class="row">
+  <button class="ar-btn ar-btn--filled ar-btn--sm">Small</button>
+  <button class="ar-btn ar-btn--filled">Medium</button>
+  <button class="ar-btn ar-btn--filled ar-btn--lg">Large</button>
+  <button class="ar-btn ar-btn--plain ar-btn--sm ar-btn--icon" aria-label="Copy"><span class="sf" data-symbol="document.on.document"></span></button>
+  <button class="ar-btn ar-btn--gray ar-btn--icon" aria-label="Attach"><span class="sf" data-symbol="paperclip"></span></button>
+  <button class="ar-btn ar-btn--filled ar-btn--lg ar-btn--icon" aria-label="Submit"><span class="sf" data-symbol="arrow.up.circle.fill"></span></button>
+</div>
+<div class="cap">Corner · radius-button = 12px at every size</div>
+<div class="opts"><div class="opt opt--chosen">
+  <div class="opt__head"><span class="opt__k">12px</span><span class="opt__v">radius-button</span></div>
+  <div class="row">
+    <button class="ar-btn ar-btn--filled ar-btn--sm" style="border-radius:var(--radius-button)">Save</button>
+    <button class="ar-btn ar-btn--gray" style="border-radius:var(--radius-button)"><span class="sf" data-symbol="square.and.arrow.up"></span>Share</button>
+    <button class="ar-btn ar-btn--filled ar-btn--lg" style="border-radius:var(--radius-button)">Continue</button>
+  </div>
+  <div class="opt__d">Chosen. Nearly round at 28px, a soft rectangle at 36 and 44px.</div>
+</div><div class="opt">
+  <div class="opt__head"><span class="opt__k">6px</span><span class="opt__v">previous</span></div>
+  <div class="row">
+    <button class="ar-btn ar-btn--filled ar-btn--sm" style="border-radius:6px">Save</button>
+    <button class="ar-btn ar-btn--gray" style="border-radius:6px"><span class="sf" data-symbol="square.and.arrow.up"></span>Share</button>
+    <button class="ar-btn ar-btn--filled ar-btn--lg" style="border-radius:6px">Continue</button>
+  </div>
+  <div class="opt__d">The earlier choice, for comparison.</div>
+</div><div class="opt opt--ref">
+  <div class="opt__head"><span class="opt__k">pill</span><span class="opt__v">not used</span></div>
+  <div class="row">
+    <button class="ar-btn ar-btn--filled ar-btn--sm" style="border-radius:999px">Save</button>
+    <button class="ar-btn ar-btn--gray" style="border-radius:999px"><span class="sf" data-symbol="square.and.arrow.up"></span>Share</button>
+    <button class="ar-btn ar-btn--filled ar-btn--lg" style="border-radius:999px">Continue</button>
+  </div>
+  <div class="opt__d">Material's full pill: grows with height and wastes corner space on wide buttons.</div>
+</div></div>
+</div>
+```
+
+The example's layout helpers (`.row`, `.col`, `.cap` and the like) are not part of `components.css`; they come from this page-level style:
+
+```css
+body { margin:0; padding:24px; }
+.row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+.col { display:flex; flex-direction:column; gap:16px; }
+.cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+.opts { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:12px; }
+.opt { padding:16px; border:1px solid var(--color-border); border-radius:var(--radius-md); display:flex; flex-direction:column; gap:12px; }
+.opt--chosen { border-color:var(--color-accent); box-shadow:var(--ring-accent); }
+.opt--ref { background:var(--color-bg-secondary); }
+.opt__head { display:flex; align-items:baseline; gap:8px; }
+.opt__k { font:700 16px/24px var(--font-sans); }
+.opt__v { font:500 13px/16px var(--font-mono); color:var(--color-accent); }
+.opt__d { font:400 12px/16px var(--font-sans); letter-spacing:.4px; color:var(--color-text-secondary); }
+```
+
+Working page: `../examples/Button.html`

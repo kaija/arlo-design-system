@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>html,body{background:var(--color-bg)}</style>
+<meta charset="utf-8"><title>Popover — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div class="row" style="align-items:flex-start;gap:32px">
+<div class="col" style="gap:10px">
+  <button class="ar-btn ar-btn--gray ar-btn--sm"><span class="sf" data-symbol="info.circle"></span>Context</button>
+  <div class="ar-popover" style="--arrow-x:20px">
+    <p class="ar-popover__title">Context window</p>
+    82,000 of 200,000 tokens used. Older messages are summarised when it fills.
+    <div class="ar-progress" style="margin-top:12px"><div class="ar-progress__fill" style="width:41%"></div></div>
+  </div>
+</div>
+<div class="col" style="gap:8px;align-items:flex-start">
+  <button class="ar-btn ar-btn--plain ar-btn--icon" aria-label="Copy"><span class="sf" data-symbol="document.on.document"></span></button>
+  <span class="ar-helptag">Copy message</span>
+</div>
+</div>
+</body>
+</html>

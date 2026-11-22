@@ -1,0 +1,24 @@
+<!-- @dsCard group="Presentation" height=330 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Sheet — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+  .col { display:flex; flex-direction:column; gap:16px; }
+  .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+
+</style></head>
+<body class="ar-root">
+<div style="max-width:420px;padding-top:24px;background:var(--color-scrim);border-radius:var(--radius-md);overflow:hidden">
+<div class="ar-sheet">
+  <div class="ar-sheet__grabber"></div>
+  <div class="ar-sheet__bar"><button class="ar-btn ar-btn--plain">Cancel</button><span class="ar-sheet__title">New agent</span><button class="ar-btn ar-btn--plain" style="font-weight:600">Create</button></div>
+  <div class="ar-sheet__body col" style="gap:16px">
+    <label class="ar-field"><span class="ar-field__label">Name</span><span class="ar-input ar-input--focus">Release notes writer</span></label>
+    <label class="ar-field"><span class="ar-field__label">Instructions</span><span class="ar-input ar-input--multiline"><span class="ar-input__ph">What should this agent do?</span></span></label>
+  </div>
+</div>
+</div>
+</body>
+</html>
