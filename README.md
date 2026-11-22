@@ -2,6 +2,8 @@
 
 The design system for the Arlo AI project family: Arlo's indigo palette, Material 3 spacing and type scale set in Inter, SF Symbols for every icon, Apple HIG components, a fixed 12px button corner, and light and dark themes.
 
+**Docs site:** https://kaija.github.io/arlo-design-system/ (deployed from `site/` by GitHub Actions on every push to `main`)
+
 | Folder | What |
 | --- | --- |
 | [`project/`](project/README.md) | The source: tokens, brand book, component guidelines and previews, symbol and logo assets. Edit here. |
