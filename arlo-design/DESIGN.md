@@ -386,6 +386,7 @@ Spacing follows **Material 3**: an 8px scale where `space100` = 8px and names ar
 - Window margins: `margin-compact` (16) under 600px wide, `margin-medium` (24) above. Panes (sidebar and content) are separated by `pane-spacer` (24).
 - Marketing pages keep Arlo's centred `container-max` (1120) and `section-padding` (96, Arlo's 100 snapped to the scale), `space800` (64) below section headers, 3-up card grids with `space300` gaps.
 - **Touch targets.** Everything tappable has at least a 44×44px hit area (`control-lg`, Apple's minimum). Menu items, sidebar rows, list rows, tab-bar items and navigation-bar actions are 44px tall by default. Controls drawn smaller (36px buttons, 28px segments and steppers, checkboxes, toggles) carry an invisible 44×44 hit area, and on touch devices (`pointer: coarse`) they grow: buttons and fields to 44, small buttons, segments and steppers to 36, checkbox and radio rows to 44. Compact variants (`ar-menu--compact`, `ar-sidebar--compact`) are for pointer-only UI and turn back to 44px on touch. Put `ar-touch` on a container to force touch sizes anywhere.
+- **Forms** use one rhythm, by proximity: help text 4px below its field, labels 8px above, 16px under a section title and between side-by-side fields, 24px between fields, 32px between sections and before the action row (see Form).
 - **Space between targets.** Keep at least `space100` (8px) between neighbouring tappable controls, so their 44px hit areas don't overlap and a finger can't land on the wrong one; stack tappable rows flush only when each row is itself 44px tall.
 
 ## Elevation & Depth
@@ -421,7 +422,7 @@ Spacing follows **Material 3**: an 8px scale where `space100` = 8px and names ar
 Components follow Apple's HIG names and behaviour, styled with Arlo's tokens. Classes live in `components/bundle.css` (prefix `ar-`); each component's card has its guidelines.
 
 - **Menus and actions:** Button, PopUpButton, Menu
-- **Selection and input:** Toggle, SegmentedControl, TextField, Checkbox, RadioButton, Slider, Stepper
+- **Selection and input:** Form, Toggle, SegmentedControl, TextField, Checkbox, RadioButton, Slider, Stepper
 - **Navigation and search:** NavigationBar, TabBar, Sidebar, SearchField, PageControl
 - **Layout and organization:** List
 - **Presentation:** Alert, Sheet, Popover

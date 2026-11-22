@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form · Arlo Design System</title>
+<link rel="icon" href="../assets/logos/favicon.svg">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/symbols.css">
+<link rel="stylesheet" href="../css/site.css">
+<script src="../js/site.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <button class="iconbtn menu-btn" id="menu" aria-label="Open navigation"><span class="sf" data-symbol="sidebar.left"></span></button>
+  <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
+  <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
+  <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
+  <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
+</header>
+<div class="shell">
+<nav class="rail" aria-label="Pages"><h4>Get started</h4><a href="../index.html">Overview</a><h4>Foundations</h4><a href="../foundations/content.html">Content</a><a href="../foundations/color.html">Color</a><a href="../foundations/typography.html">Typography</a><a href="../foundations/spacing.html">Spacing and layout</a><a href="../foundations/shape.html">Shape</a><a href="../foundations/elevation.html">Elevation and motion</a><a href="../foundations/iconography.html">Iconography</a><a href="../foundations/status-lab.html">Status color lab</a><h4>Symbols</h4><a href="../symbols/interface.html">Symbols</a><a href="../symbols/calendar.html">Calendar</a><a href="../symbols/travel.html">Travel</a><a href="../symbols/logos.html">Logos</a><h4>Components</h4><a href="../components/index.html">All components</a><a href="../components/Button.html">Button</a><a href="../components/Menu.html">Menu</a><a href="../components/PopUpButton.html">Pop-up button</a><a href="../components/Checkbox.html">Checkbox</a><a href="../components/Form.html" class="on">Form</a><a href="../components/RadioButton.html">Radio button</a><a href="../components/SegmentedControl.html">Segmented control</a><a href="../components/Slider.html">Slider</a><a href="../components/Stepper.html">Stepper</a><a href="../components/TextField.html">Text field</a><a href="../components/Toggle.html">Toggle</a><a href="../components/NavigationBar.html">Navigation bar</a><a href="../components/PageControl.html">Page control</a><a href="../components/SearchField.html">Search field</a><a href="../components/Sidebar.html">Sidebar</a><a href="../components/TabBar.html">Tab bar</a><a href="../components/List.html">List</a><a href="../components/Alert.html">Alert</a><a href="../components/Popover.html">Popover</a><a href="../components/Sheet.html">Sheet</a><a href="../components/Badge.html">Badge</a><a href="../components/ProgressIndicator.html">Progress indicator</a><a href="../components/Symbol.html">Symbol</a></nav>
+<main>
+<section class="hero"><p class="eyebrow">Selection and input</p><h1>Form</h1><p class="lede">A form lays out fields, choices and actions with one fixed spacing scale, so every settings screen, sheet and dialog groups information the same way.</p></section>
+<div class="frame"><div class="frame-bar">Preview</div><iframe title="Form preview" data-src="../previews/Form.html" src="../previews/Form.html" style="height:908px" data-fit></iframe></div><details class="code-box"><summary>HTML</summary><pre class="code">&lt;p class=&quot;spec&quot;&gt;&lt;span&gt;&lt;b&gt;4&lt;/b&gt; help ↔ field&lt;/span&gt;&lt;span&gt;&lt;b&gt;8&lt;/b&gt; label ↔ field&lt;/span&gt;&lt;span&gt;&lt;b&gt;16&lt;/b&gt; section title ↔ first field · side-by-side fields&lt;/span&gt;&lt;span&gt;&lt;b&gt;24&lt;/b&gt; field ↔ field&lt;/span&gt;&lt;span&gt;&lt;b&gt;32&lt;/b&gt; section ↔ section · last field ↔ actions&lt;/span&gt;&lt;/p&gt;
+&lt;form class=&quot;ar-form&quot; onsubmit=&quot;return false&quot;&gt;
+  &lt;section class=&quot;ar-form__section&quot;&gt;
+    &lt;h3 class=&quot;ar-form__title&quot;&gt;Provider&lt;/h3&gt;
+    &lt;p class=&quot;ar-form__note&quot;&gt;Requests go straight from this device to your provider.&lt;/p&gt;
+    &lt;div class=&quot;ar-form__row&quot;&gt;
+      &lt;label class=&quot;ar-field&quot;&gt;&lt;span class=&quot;ar-field__label&quot;&gt;Provider&lt;/span&gt;&lt;button type=&quot;button&quot; class=&quot;ar-btn ar-btn--outline ar-popup&quot; style=&quot;min-width:0&quot;&gt;Anthropic &lt;span class=&quot;ar-popup__chev&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;chevron.down&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/label&gt;
+      &lt;label class=&quot;ar-field&quot;&gt;&lt;span class=&quot;ar-field__label&quot;&gt;Model&lt;/span&gt;&lt;button type=&quot;button&quot; class=&quot;ar-btn ar-btn--outline ar-popup&quot; style=&quot;min-width:0&quot;&gt;Opus 5.5 &lt;span class=&quot;ar-popup__chev&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;chevron.down&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;label class=&quot;ar-field&quot;&gt;&lt;span class=&quot;ar-field__label&quot;&gt;API key&lt;/span&gt;&lt;span class=&quot;ar-input ar-input--focus&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;lock&quot;&gt;&lt;/span&gt;sk-ant-•••••••••••&lt;/span&gt;&lt;span class=&quot;ar-field__help&quot;&gt;Stored in your Keychain. We never see it.&lt;/span&gt;&lt;/label&gt;
+    &lt;label class=&quot;ar-field&quot;&gt;&lt;span class=&quot;ar-field__label&quot;&gt;Endpoint&lt;span class=&quot;ar-field__opt&quot;&gt;Optional&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;ar-input ar-input--error&quot;&gt;htps://api.local&lt;/span&gt;&lt;span class=&quot;ar-field__help ar-field__help--error&quot;&gt;Enter a URL that starts with https://&lt;/span&gt;&lt;/label&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;ar-form__section&quot;&gt;
+    &lt;h3 class=&quot;ar-form__title&quot;&gt;Behaviour&lt;/h3&gt;
+    &lt;div class=&quot;ar-choices&quot; role=&quot;radiogroup&quot; aria-labelledby=&quot;f-run&quot;&gt;&lt;span class=&quot;ar-choices__label&quot; id=&quot;f-run&quot;&gt;Where agents run&lt;/span&gt;
+      &lt;span class=&quot;ar-radio ar-radio--on&quot;&gt;&lt;span class=&quot;ar-radio__dot&quot;&gt;&lt;/span&gt;Run locally (Arlo Rust)&lt;/span&gt;
+      &lt;span class=&quot;ar-radio&quot;&gt;&lt;span class=&quot;ar-radio__dot&quot;&gt;&lt;/span&gt;Use my provider directly&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ar-choices&quot; role=&quot;group&quot; aria-labelledby=&quot;f-exp&quot;&gt;&lt;span class=&quot;ar-choices__label&quot; id=&quot;f-exp&quot;&gt;Include in exports&lt;/span&gt;
+      &lt;span class=&quot;ar-check ar-check--on&quot;&gt;&lt;span class=&quot;ar-check__box&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;checkmark&quot;&gt;&lt;/span&gt;&lt;/span&gt;Tool calls&lt;/span&gt;
+      &lt;span class=&quot;ar-check&quot;&gt;&lt;span class=&quot;ar-check__box&quot;&gt;&lt;/span&gt;System prompt&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;label class=&quot;ar-field&quot;&gt;&lt;span class=&quot;ar-field__label&quot;&gt;System prompt&lt;span class=&quot;ar-field__opt&quot;&gt;Optional&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;ar-input ar-input--multiline&quot;&gt;&lt;span class=&quot;ar-input__ph&quot;&gt;You are a concise assistant…&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+  &lt;/section&gt;
+  &lt;div class=&quot;ar-form__actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;ar-btn ar-btn--gray&quot;&gt;Cancel&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;ar-btn ar-btn--filled&quot;&gt;Save&lt;/button&gt;&lt;/div&gt;
+&lt;/form&gt;
+
+&lt;!-- page-level layout helpers used by this example --&gt;
+&lt;style&gt;
+body { margin:0; padding:24px; }
+.spec { display:flex; flex-wrap:wrap; gap:8px 16px; margin:0 0 24px; font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+.spec b { color:var(--color-accent); font-weight:600; }
+&lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><p><strong>Spacing, by proximity</strong> (the closer two things are, the more they belong together):</p>
+<table><thead><tr><th>Between</th><th>Space</th><th>Token</th></tr></thead><tbody><tr><td>Help or error text and its field</td><td>4px</td><td><code>space50</code></td></tr><tr><td>Label and its field; choices in a group (pointer)</td><td>8px</td><td><code>space100</code></td></tr><tr><td>Section title and its first field; side-by-side fields</td><td>16px</td><td><code>space200</code></td></tr><tr><td>Field and field (stacked)</td><td>24px</td><td><code>space300</code></td></tr><tr><td>Section and section; last field and the action row</td><td>32px</td><td><code>space300</code> + <code>space100</code></td></tr></tbody></table>
+<ul><li><code>ar-form</code>: a column with 24px between fields, max 560px wide. Put a single column on phones; <code>ar-form__row</code> places 2–3 short related fields side by side (16px apart, wrapping below 160px each).</li><li><code>ar-form__section</code> groups related fields under an <code>ar-form__title</code> (<code>title-medium-emphasized</code>) with an optional <code>ar-form__note</code> 4px below it.</li><li><code>ar-field</code>: <code>ar-field__label</code> 8px above the control, <code>ar-field__help</code> 4px below. Mark optional fields with <code>ar-field__opt</code> ("Optional"), not required ones with asterisks. Error text replaces the help text in place, so the layout doesn't jump.</li><li><code>ar-choices</code>: a labelled group of checkboxes or radio buttons, 8px apart on pointer devices and flush on touch, where each row is already 44px.</li><li><code>ar-form__actions</code>: right-aligned, 32px below the last field, buttons 8px apart, the default action last. Below 480px wide the buttons stack full width with the default on top.</li><li>Fields are 36px tall with 10px side padding on pointer devices and 44px with 16px on touch.</li></ul>
+<p><strong>The consumer provides:</strong> real <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code> and <code>&lt;fieldset&gt;</code>/<code>&lt;legend&gt;</code> (or <code>role="group"</code> with <code>aria-labelledby</code>) elements inside these classes, validation, and the submit handler. <strong>Don't</strong> put help text above a field, centre labels, or space fields by hand: use these classes so every form keeps the same rhythm.</p></div>
+<p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
+</main>
+</div>
+<div class="toast" id="toast" role="status"><span class="ar-helptag"><span><span class="sf sf--sm" data-symbol="checkmark"></span></span> <span>Copied</span></span></div>
+</body>
+</html>

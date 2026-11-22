@@ -4,6 +4,7 @@ A checkbox turns an option on or off inside a form that is confirmed later (Appl
 
 - `ar-check__box` 16×16, `radius-xs`, white with a `color-border-strong` edge and `shadow-sm`. Checked (`ar-check--on`) and mixed (`ar-check--mixed`) fill with `color-accent` and show a white `checkmark` or dash.
 - Label to the right in `body-medium`; the whole row is the hit target (at least 28px tall on desktop, 44px on touch).
+- Group related checkboxes in `ar-choices` with an `ar-choices__label` (or a `<fieldset>` and `<legend>`): 8px between rows on pointer devices, flush on touch where rows are 44px.
 - Use for independent options in a list; use `Toggle` when the change applies immediately.
 
 **Touch.** Make the whole row (box and label) the hit target; on touch devices rows are at least 44px tall.
@@ -15,7 +16,7 @@ A checkbox turns an option on or off inside a form that is confirmed later (Appl
 Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on the body, then:
 
 ```html
-<div class="col" style="gap:12px">
+<div class="ar-choices" role="group" aria-labelledby="cb-l"><span class="ar-choices__label" id="cb-l">Export</span>
 <span class="ar-check ar-check--on"><span class="ar-check__box"><span class="sf" data-symbol="checkmark"></span></span>Include tool calls in export</span>
 <span class="ar-check"><span class="ar-check__box"></span>Include system prompt</span>
 <span class="ar-check ar-check--mixed"><span class="ar-check__box"><span class="ar-check__dash"></span></span>All attachments (some selected)</span>

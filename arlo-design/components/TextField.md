@@ -2,9 +2,9 @@
 
 A text field takes a short line of text; a multiline field takes paragraphs (Apple: text fields, text views).
 
-- `ar-input`: 36px (`control-md`), `color-bg` with a `color-border-strong` 1px edge, `radius-sm`, `body-medium` text, `space125` horizontal padding. Placeholder in `ar-input__ph` (`color-text-tertiary`: never the only label).
+- `ar-input`: 36px (`control-md`), `color-bg` with a `color-border-strong` 1px edge, `radius-sm`, `body-medium` text, 10px (`space125`) side padding, 16px (`space200`) on touch devices. A leading symbol is `color-text-secondary`. Placeholder in `ar-input__ph` (`color-text-tertiary`: never the only label).
 - Focus: `ar-input--focus` turns the border `color-accent` and adds `halo-focus`. Error: `ar-input--error` (`color-danger` border, `color-danger-light` fill) with `ar-field__help--error` text that says how to fix it.
-- Wrap in `ar-field` with a visible `ar-field__label` (`label-medium`) above and optional `ar-field__help` below.
+- Wrap in `ar-field` with a visible `ar-field__label` (`label-medium`) 8px above and optional `ar-field__help` 4px below, so help text sits closer to its own field than to the next label. Stack fields 24px apart inside an `ar-form` (see Form).
 - A leading `symbol-sm` SF Symbol may say what the field holds (`lock` for secrets).
 
 **Touch.** Fields grow to 44px tall on touch devices.
@@ -17,13 +17,13 @@ Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on 
 
 ```html
 <div class="row" style="align-items:flex-start;gap:24px">
-<div class="col" style="width:280px">
+<div class="ar-form" style="width:280px">
   <label class="ar-field"><span class="ar-field__label">Provider</span><span class="ar-input"><span class="ar-input__ph">e.g. Anthropic</span></span></label>
   <label class="ar-field"><span class="ar-field__label">API key</span><span class="ar-input ar-input--focus"><span class="sf" data-symbol="lock"></span>sk-ant-•••••••••••</span><span class="ar-field__help">Stored in your Keychain. We never see it.</span></label>
 </div>
-<div class="col" style="width:280px">
+<div class="ar-form" style="width:280px">
   <label class="ar-field"><span class="ar-field__label">Endpoint</span><span class="ar-input ar-input--error">htps://api.local</span><span class="ar-field__help ar-field__help--error">Enter a URL that starts with https://</span></label>
-  <label class="ar-field"><span class="ar-field__label">System prompt</span><span class="ar-input ar-input--multiline"><span class="ar-input__ph">You are a concise assistant…</span></span></label>
+  <label class="ar-field"><span class="ar-field__label">System prompt<span class="ar-field__opt">Optional</span></span><span class="ar-input ar-input--multiline"><span class="ar-input__ph">You are a concise assistant…</span></span></label>
 </div>
 </div>
 ```

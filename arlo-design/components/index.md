@@ -11,6 +11,7 @@ Apple-HIG components styled with Arlo tokens. Classes are in `components.css` (p
 ## Selection and input
 
 - [Checkbox](Checkbox.md) — A checkbox turns an option on or off inside a form that is confirmed later (Apple: checkboxes, macOS).
+- [Form](Form.md) — A form lays out fields, choices and actions with one fixed spacing scale, so every settings screen, sheet and dialog groups information the same way.
 - [RadioButton](RadioButton.md) — Radio buttons choose exactly one option from a small, visible set (Apple: radio buttons, macOS).
 - [SegmentedControl](SegmentedControl.md) — A segmented control switches between 2–5 closely related views or modes (Apple: segmented controls); it replaces Arlo's pill `Tabs`.
 - [Slider](Slider.md) — A slider picks a value from a continuous range (Apple: sliders).

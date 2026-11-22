@@ -1,0 +1,38 @@
+<!-- @dsCard group="Selection and input" height=900 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Form — preview</title>
+<style>
+  body { margin:0; padding:24px; }
+  .spec { display:flex; flex-wrap:wrap; gap:8px 16px; margin:0 0 24px; font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
+  .spec b { color:var(--color-accent); font-weight:600; }
+</style></head>
+<body class="ar-root">
+<p class="spec"><span><b>4</b> help ↔ field</span><span><b>8</b> label ↔ field</span><span><b>16</b> section title ↔ first field · side-by-side fields</span><span><b>24</b> field ↔ field</span><span><b>32</b> section ↔ section · last field ↔ actions</span></p>
+<form class="ar-form" onsubmit="return false">
+  <section class="ar-form__section">
+    <h3 class="ar-form__title">Provider</h3>
+    <p class="ar-form__note">Requests go straight from this device to your provider.</p>
+    <div class="ar-form__row">
+      <label class="ar-field"><span class="ar-field__label">Provider</span><button type="button" class="ar-btn ar-btn--outline ar-popup" style="min-width:0">Anthropic <span class="ar-popup__chev"><span class="sf" style="--sf:url(/_blob/a9542d991465ae1f6706f7a0cfb647df)"></span></span></button></label>
+      <label class="ar-field"><span class="ar-field__label">Model</span><button type="button" class="ar-btn ar-btn--outline ar-popup" style="min-width:0">Opus 5.5 <span class="ar-popup__chev"><span class="sf" style="--sf:url(/_blob/a9542d991465ae1f6706f7a0cfb647df)"></span></span></button></label>
+    </div>
+    <label class="ar-field"><span class="ar-field__label">API key</span><span class="ar-input ar-input--focus"><span class="sf" style="--sf:url(/_blob/d77a5d500038961ba0494256a81c65d0)"></span>sk-ant-•••••••••••</span><span class="ar-field__help">Stored in your Keychain. We never see it.</span></label>
+    <label class="ar-field"><span class="ar-field__label">Endpoint<span class="ar-field__opt">Optional</span></span><span class="ar-input ar-input--error">htps://api.local</span><span class="ar-field__help ar-field__help--error">Enter a URL that starts with https://</span></label>
+  </section>
+  <section class="ar-form__section">
+    <h3 class="ar-form__title">Behaviour</h3>
+    <div class="ar-choices" role="radiogroup" aria-labelledby="f-run"><span class="ar-choices__label" id="f-run">Where agents run</span>
+      <span class="ar-radio ar-radio--on"><span class="ar-radio__dot"></span>Run locally (Arlo Rust)</span>
+      <span class="ar-radio"><span class="ar-radio__dot"></span>Use my provider directly</span>
+    </div>
+    <div class="ar-choices" role="group" aria-labelledby="f-exp"><span class="ar-choices__label" id="f-exp">Include in exports</span>
+      <span class="ar-check ar-check--on"><span class="ar-check__box"><span class="sf" style="--sf:url(/_blob/994c9655967939c48c3629e934e338bf)"></span></span>Tool calls</span>
+      <span class="ar-check"><span class="ar-check__box"></span>System prompt</span>
+    </div>
+    <label class="ar-field"><span class="ar-field__label">System prompt<span class="ar-field__opt">Optional</span></span><span class="ar-input ar-input--multiline"><span class="ar-input__ph">You are a concise assistant…</span></span></label>
+  </section>
+  <div class="ar-form__actions"><button type="button" class="ar-btn ar-btn--gray">Cancel</button><button type="button" class="ar-btn ar-btn--filled">Save</button></div>
+</form>
+</body>
+</html>
