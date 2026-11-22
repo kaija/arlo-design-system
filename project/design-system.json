@@ -1085,8 +1085,8 @@
  },
  "lastChange": {
   "by": "Claude",
-  "at": "2026-11-22T11:19:28Z",
+  "at": "2026-11-22T11:32:04Z",
   "via": "Claude Code",
-  "note": "Status colours switched to Apple system green, orange and red"
+  "note": "Touch targets: 44px sidebar rows, 44x44 hit areas, touch sizing on pointer:coarse, 8px between targets"
  }
 }

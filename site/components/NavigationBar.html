@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -45,6 +46,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-navbar</code>: 44px (<code>control-lg</code>), full width, <code>radius-none</code>, Arlo's frosted glass (<code>rgba(255,255,255,.82)</code> + <code>saturate(180%) blur(20px)</code>) with a <code>color-border</code> bottom hairline. This is the one place blur is allowed.</li><li>Leading: <code>ar-navbar__back</code> (<code>chevron.left</code> + the previous title in <code>color-accent</code>) or a plain icon button. Centre: <code>ar-navbar__title</code> (<code>title-medium-emphasized</code>). Trailing: up to three <code>ar-btn--plain ar-btn--icon</code> buttons with <code>symbol-md</code> symbols.</li><li>Top-level views use <code>ar-navbar--large</code> with <code>ar-navbar__large-title</code> (<code>headline-large-emphasized</code>).</li><li>Marketing pages keep Arlo's 64px (<code>nav-height</code>) site nav.</li></ul>
+<p><strong>Touch.</strong> The back button and every action are 44px tall; icon buttons have 44×44 hit areas and grow to 44px on touch devices.</p>
 <p><strong>The consumer provides:</strong> the title, back target, actions with <code>aria-label</code>s, and scroll-linked collapse of the large title. <strong>Don't</strong> put more than three trailing actions; move the rest into a <code>Menu</code> behind <code>ellipsis.circle</code>.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

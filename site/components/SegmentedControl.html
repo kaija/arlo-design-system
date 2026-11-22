@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -36,6 +37,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li>Track <code>ar-seg</code>: <code>color-bg-tertiary</code>, <code>space25</code> inset, corner <code>radius-button</code> + 2px. Segments <code>ar-seg__item</code>: 28px (<code>control-sm</code>), 13px medium text in <code>color-text-secondary</code>; the selected one is <code>ar-seg__item--selected</code> (white, <code>color-text-primary</code>, <code>shadow-sm</code>).</li><li>Segments use the same corner as buttons (<code>radius-button</code>, 12px), not a capsule.</li><li><code>ar-seg--full</code> stretches segments equally across a container.</li><li>Text or a symbol in each segment, consistently: don't mix symbol-only and text-only segments.</li></ul>
+<p><strong>Touch.</strong> Each segment has a 44px-tall hit area; on touch devices segments grow to 36px.</p>
 <p><strong>The consumer provides:</strong> the segments, the selected index, and the handler; use <code>role="tablist"</code>/<code>role="tab"</code> when it switches views. <strong>Don't</strong> use it for actions or for more than 5 options.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

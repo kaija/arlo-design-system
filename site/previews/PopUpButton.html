@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/symbols.css">
-<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script>try{var q=new URLSearchParams(location.search),t=q.get("theme");if(t)document.documentElement.setAttribute("data-theme",t);if(q.get("touch")==="1")document.documentElement.classList.add("ar-touch")}catch(e){}</script>
 <style>html,body{background:var(--color-bg)}</style>
 <meta charset="utf-8"><title>Pop-up button — preview</title>
 <style>
@@ -16,7 +16,7 @@
 </style></head>
 <body class="ar-root">
 <div class="row" style="align-items:flex-start;gap:24px">
-<div class="col" style="gap:8px">
+<div class="col" style="gap:16px">
   <div class="cap">Closed</div>
   <button class="ar-btn ar-btn--outline ar-popup">claude-opus-5-5 <span class="ar-popup__chev"><span class="sf" data-symbol="chevron.down"></span></span></button>
   <button class="ar-btn ar-btn--gray ar-btn--sm ar-popup" style="min-width:120px">English <span class="ar-popup__chev"><span class="sf" data-symbol="chevron.down"></span></span></button>

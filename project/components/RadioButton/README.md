@@ -6,4 +6,6 @@ Radio buttons choose exactly one option from a small, visible set (Apple: radio 
 - Stack 2–5 options vertically with `space100`–`space150` between rows; more than 5: use `PopUpButton`.
 - Wrap the group in `role="radiogroup"` with a visible group label.
 
+**Touch.** The whole row is the hit target; on touch devices rows are at least 44px tall.
+
 **The consumer provides:** native `<input type="radio">` elements sharing a name, labels, and the selected value. **Don't** start a group with nothing selected unless "no choice" is valid.

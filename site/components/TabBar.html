@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -39,6 +40,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-tabbar</code>: bottom edge, frosted like <code>NavigationBar</code>, <code>color-border</code> top hairline. 3–5 items, each an SF Symbol at <code>symbol-lg</code> over a <code>label-small</code> title.</li><li>Selected item: <code>color-accent</code>. Others: <code>color-text-secondary</code> (<code>color-text-tertiary</code> is too light for 11px labels).</li><li>A count badge (<code>ar-count</code>) may sit on an item's symbol.</li><li>On medium and wider windows switch to a <code>Sidebar</code>.</li></ul>
+<p><strong>Touch.</strong> Each item is at least 44px tall and 64px wide.</p>
 <p><strong>The consumer provides:</strong> the sections (symbol, title, badge), the selected section, and navigation. <strong>Don't</strong> use a tab bar for actions, or hide it inside a section.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

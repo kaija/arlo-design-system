@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -35,7 +36,7 @@
   &lt;button class=&quot;ar-btn ar-btn--gray ar-btn--icon&quot; aria-label=&quot;More&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;ellipsis&quot;&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;button class=&quot;ar-btn ar-btn--filled ar-btn--disabled&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;cap&quot;&gt;Sizes · sm 28 · md 36 · lg 44&lt;/div&gt;
+&lt;div class=&quot;cap&quot;&gt;Sizes · sm 28 · md 36 · lg 44 (touch devices: 36 · 44 · 44)&lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;
   &lt;button class=&quot;ar-btn ar-btn--filled ar-btn--sm&quot;&gt;Small&lt;/button&gt;
   &lt;button class=&quot;ar-btn ar-btn--filled&quot;&gt;Medium&lt;/button&gt;
@@ -90,6 +91,7 @@ body { margin:0; padding:24px; }
 <ul><li><code>ar-btn--filled</code>: the one primary action on a screen or in a dialog (<code>color-accent</code>, hover <code>color-accent-hover</code> + <code>shadow-accent</code>).</li><li><code>ar-btn--tinted</code>: a secondary action that should still read as accent (<code>color-accent-light</code> fill).</li><li><code>ar-btn--gray</code>: neutral secondary actions such as Cancel (<code>color-bg-tertiary</code>).</li><li><code>ar-btn--outline</code>: Arlo's original white-with-border secondary button, for marketing pages and toolbars on white.</li><li><code>ar-btn--plain</code>: low-emphasis and inline actions, toolbar icons.</li><li><code>ar-btn--destructive</code> / <code>ar-btn--destructive-plain</code>: actions that delete or can't be undone.</li></ul>
 <p><strong>Sizes.</strong> <code>ar-btn--sm</code> (28, <code>control-sm</code>) for toolbars and dense desktop UI, default 36 (<code>control-md</code>), <code>ar-btn--lg</code> (44, <code>control-lg</code>) for touch-first primary actions. Add <code>ar-btn--icon</code> for symbol-only square buttons, which must have an <code>aria-label</code>.</p>
 <p><strong>Corner.</strong> Every size uses the same <code>radius-button</code>. The token is 12px: Material's full pill and Apple's capsule are deliberately not used, so 36px and 44px buttons stay soft rectangles while 28px buttons come out nearly round.</p>
+<p><strong>Touch.</strong> Every button has a 44×44 hit area even when drawn smaller. On touch devices <code>ar-btn</code> grows to 44px and <code>ar-btn--sm</code> to 36px; leave at least 8px (<code>space100</code>) between neighbouring buttons, and 16px (<code>space200</code>) beside a 28px <code>ar-btn--sm</code>, so hit areas never overlap.</p>
 <p><strong>The consumer provides:</strong> a <code>&lt;button&gt;</code> (or <code>&lt;a&gt;</code> for navigation) with a verb label in sentence case, an optional leading SF Symbol (<code>.sf</code>, sized by the button), and a disabled state.</p>
 <p><strong>Do:</strong> use one filled button per view. Swap <code>arrow.up.circle.fill</code> (submit) to <code>stop.fill</code> in the same button while a response streams. <strong>Don't:</strong> use title case or ending punctuation, put two filled buttons side by side, or scale on press.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>

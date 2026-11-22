@@ -14,7 +14,7 @@ Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on 
 
 ```html
 <div class="row" style="align-items:flex-start;gap:24px">
-<div class="col" style="gap:8px">
+<div class="col" style="gap:16px">
   <div class="cap">Closed</div>
   <button class="ar-btn ar-btn--outline ar-popup">claude-opus-5-5 <span class="ar-popup__chev"><span class="sf" data-symbol="chevron.down"></span></span></button>
   <button class="ar-btn ar-btn--gray ar-btn--sm ar-popup" style="min-width:120px">English <span class="ar-popup__chev"><span class="sf" data-symbol="chevron.down"></span></span></button>

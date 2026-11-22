@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -35,6 +36,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li>Rail <code>ar-slider__rail</code> 4px, <code>radius-pill</code>, <code>color-bg-tertiary</code>; fill <code>ar-slider__fill</code> in <code>color-accent</code> from the minimum to the value; thumb 20px white with a soft shadow.</li><li>Optional min/max SF Symbols at either end (<code>speaker.wave.2</code>) in <code>color-text-secondary</code>, via <code>ar-slider-row</code>.</li><li>Show the current value in the label when the exact number matters.</li></ul>
+<p><strong>Touch.</strong> On touch devices the slider is 44px tall with a 28px thumb.</p>
 <p><strong>The consumer provides:</strong> a native <code>&lt;input type="range"&gt;</code> (style its track and thumb with these values), min/max/step, value and label. <strong>Don't</strong> use a slider for precise numeric entry; pair it with a <code>Stepper</code> or <code>TextField</code>.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

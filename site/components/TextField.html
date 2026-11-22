@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -41,6 +42,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-input</code>: 36px (<code>control-md</code>), <code>color-bg</code> with a <code>color-border-strong</code> 1px edge, <code>radius-sm</code>, <code>body-medium</code> text, <code>space125</code> horizontal padding. Placeholder in <code>ar-input__ph</code> (<code>color-text-tertiary</code>: never the only label).</li><li>Focus: <code>ar-input--focus</code> turns the border <code>color-accent</code> and adds <code>halo-focus</code>. Error: <code>ar-input--error</code> (<code>color-danger</code> border, <code>color-danger-light</code> fill) with <code>ar-field__help--error</code> text that says how to fix it.</li><li>Wrap in <code>ar-field</code> with a visible <code>ar-field__label</code> (<code>label-medium</code>) above and optional <code>ar-field__help</code> below.</li><li>A leading <code>symbol-sm</code> SF Symbol may say what the field holds (<code>lock</code> for secrets).</li></ul>
+<p><strong>Touch.</strong> Fields grow to 44px tall on touch devices.</p>
 <p><strong>The consumer provides:</strong> a real <code>&lt;input&gt;</code>/<code>&lt;textarea&gt;</code> inside the frame, the label, validation and the help text. <strong>Don't</strong> rely on placeholder text as the label or show errors before the user leaves the field.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

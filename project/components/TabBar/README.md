@@ -7,4 +7,6 @@ A tab bar switches between the top-level sections of an app on compact windows (
 - A count badge (`ar-count`) may sit on an item's symbol.
 - On medium and wider windows switch to a `Sidebar`.
 
+**Touch.** Each item is at least 44px tall and 64px wide.
+
 **The consumer provides:** the sections (symbol, title, badge), the selected section, and navigation. **Don't** use a tab bar for actions, or hide it inside a section.

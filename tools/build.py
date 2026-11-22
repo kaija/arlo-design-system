@@ -149,7 +149,7 @@ def preview_doc(c, css_prefix):
     head = (f'<link rel="stylesheet" href="{css_prefix}tokens.css">\n'
             f'<link rel="stylesheet" href="{css_prefix}components.css">\n'
             f'<link rel="stylesheet" href="{css_prefix}symbols.css">\n'
-            '<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>\n'
+            '<script>try{var q=new URLSearchParams(location.search),t=q.get("theme");if(t)document.documentElement.setAttribute("data-theme",t);if(q.get("touch")==="1")document.documentElement.classList.add("ar-touch")}catch(e){}</script>\n'
             '<style>html,body{background:var(--color-bg)}</style>\n')
     return c["preview"].replace("<head>", "<head>\n" + head, 1)
 

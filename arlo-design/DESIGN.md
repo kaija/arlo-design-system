@@ -385,7 +385,8 @@ Spacing follows **Material 3**: an 8px scale where `space100` = 8px and names ar
 - Buttons and list rows: `space200` horizontal padding. Cards, alerts, sheets: `space300`. Gaps between grouped controls: `space100`; between groups: `space300`.
 - Window margins: `margin-compact` (16) under 600px wide, `margin-medium` (24) above. Panes (sidebar and content) are separated by `pane-spacer` (24).
 - Marketing pages keep Arlo's centred `container-max` (1120) and `section-padding` (96, Arlo's 100 snapped to the scale), `space800` (64) below section headers, 3-up card grids with `space300` gaps.
-- Hit targets: at least `control-lg` (44) on touch; desktop controls are `control-sm` (28) or `control-md` (36).
+- **Touch targets.** Everything tappable has at least a 44×44px hit area (`control-lg`, Apple's minimum). Menu items, sidebar rows, list rows, tab-bar items and navigation-bar actions are 44px tall by default. Controls drawn smaller (36px buttons, 28px segments and steppers, checkboxes, toggles) carry an invisible 44×44 hit area, and on touch devices (`pointer: coarse`) they grow: buttons and fields to 44, small buttons, segments and steppers to 36, checkbox and radio rows to 44. Compact variants (`ar-menu--compact`, `ar-sidebar--compact`) are for pointer-only UI and turn back to 44px on touch. Put `ar-touch` on a container to force touch sizes anywhere.
+- **Space between targets.** Keep at least `space100` (8px) between neighbouring tappable controls, so their 44px hit areas don't overlap and a finger can't land on the wrong one; stack tappable rows flush only when each row is itself 44px tall.
 
 ## Elevation & Depth
 

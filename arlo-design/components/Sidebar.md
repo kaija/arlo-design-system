@@ -3,7 +3,8 @@
 A sidebar lists an app's top-level sections and collections on medium and wider windows (Apple: sidebars).
 
 - `ar-sidebar`: 240px wide, `color-bg-secondary`, `color-border` right edge, `space100` padding. Optional `SearchField` at the top.
-- Section headers `ar-sidebar__section` (`label-small`, `color-text-secondary`). Rows `ar-sidebar__item`: 28px, `radius-sm`, a `symbol-sm` SF Symbol in `color-accent`, `body-medium` text, optional trailing count.
+- Section headers `ar-sidebar__section` (`label-small`, `color-text-secondary`). Rows `ar-sidebar__item`: 44px (`control-lg`), `radius-sm`, a `symbol-sm` SF Symbol in `color-accent`, `body-medium` text, optional trailing count.
+- Rows are at least 44px tall (`control-lg`) so a finger can't hit the neighbouring row. Pointer-only desktop UI may use `ar-sidebar--compact` (32px rows); on touch devices compact rows return to 44px.
 - Selected row: `ar-sidebar__item--selected` (`color-accent-light` fill, `color-accent` text).
 - Separate the sidebar from content with `pane-spacer` (24px) of padding in the content pane.
 
@@ -14,7 +15,7 @@ A sidebar lists an app's top-level sections and collections on medium and wider 
 Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on the body, then:
 
 ```html
-<div style="display:flex;height:290px;border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;max-width:560px">
+<div style="display:flex;height:390px;border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;max-width:560px">
 <div class="ar-sidebar">
   <div class="ar-search"><span class="sf" data-symbol="magnifyingglass"></span><span class="ar-input__ph">Search</span></div>
   <div class="ar-sidebar__section">Workspace</div>

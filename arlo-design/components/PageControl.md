@@ -5,6 +5,8 @@ A page control shows how many pages a horizontally paged view has and which one 
 - `ar-pages`: 8px dots, `space100` apart. Current dot `color-text-primary`; others `color-text-tertiary` at reduced opacity. `ar-pages--platter` adds a `color-bg-tertiary` capsule for busy backgrounds.
 - Up to ~10 pages; beyond that, use a different navigation.
 
+**Touch.** The control is 44px tall on touch devices; tapping either side moves one page.
+
 **The consumer provides:** page count, current page, and taps/arrow keys to move. **Don't** use it for hierarchical navigation; use `NavigationBar`.
 
 ## Markup

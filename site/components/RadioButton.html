@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -36,6 +37,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-radio__dot</code> 16px circle, white with <code>color-border-strong</code> edge; selected (<code>ar-radio--on</code>) is <code>color-accent</code> with a white centre dot.</li><li>Stack 2–5 options vertically with <code>space100</code>–<code>space150</code> between rows; more than 5: use <code>PopUpButton</code>.</li><li>Wrap the group in <code>role="radiogroup"</code> with a visible group label.</li></ul>
+<p><strong>Touch.</strong> The whole row is the hit target; on touch devices rows are at least 44px tall.</p>
 <p><strong>The consumer provides:</strong> native <code>&lt;input type="radio"&gt;</code> elements sharing a name, labels, and the selected value. <strong>Don't</strong> start a group with nothing selected unless "no choice" is valid.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

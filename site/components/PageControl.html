@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -35,6 +36,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-pages</code>: 8px dots, <code>space100</code> apart. Current dot <code>color-text-primary</code>; others <code>color-text-tertiary</code> at reduced opacity. <code>ar-pages--platter</code> adds a <code>color-bg-tertiary</code> capsule for busy backgrounds.</li><li>Up to ~10 pages; beyond that, use a different navigation.</li></ul>
+<p><strong>Touch.</strong> The control is 44px tall on touch devices; tapping either side moves one page.</p>
 <p><strong>The consumer provides:</strong> page count, current page, and taps/arrow keys to move. <strong>Don't</strong> use it for hierarchical navigation; use <code>NavigationBar</code>.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

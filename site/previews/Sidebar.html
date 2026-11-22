@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/symbols.css">
-<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script>try{var q=new URLSearchParams(location.search),t=q.get("theme");if(t)document.documentElement.setAttribute("data-theme",t);if(q.get("touch")==="1")document.documentElement.classList.add("ar-touch")}catch(e){}</script>
 <style>html,body{background:var(--color-bg)}</style>
 <meta charset="utf-8"><title>Sidebar — preview</title>
 <style>
@@ -15,7 +15,7 @@
 
 </style></head>
 <body class="ar-root">
-<div style="display:flex;height:290px;border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;max-width:560px">
+<div style="display:flex;height:390px;border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;max-width:560px">
 <div class="ar-sidebar">
   <div class="ar-search"><span class="sf" data-symbol="magnifyingglass"></span><span class="ar-input__ph">Search</span></div>
   <div class="ar-sidebar__section">Workspace</div>

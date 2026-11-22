@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -24,7 +25,7 @@
 <main>
 <section class="hero"><p class="eyebrow">Menus and actions</p><h1>Pop-up button</h1><p class="lede">A pop-up button shows the current choice from a short, mutually exclusive list and opens a menu to change it (Apple: pop-up buttons).</p></section>
 <div class="frame"><div class="frame-bar">Preview</div><iframe title="PopUpButton preview" data-src="../previews/PopUpButton.html" src="../previews/PopUpButton.html" style="height:298px" data-fit></iframe></div><details class="code-box"><summary>HTML</summary><pre class="code">&lt;div class=&quot;row&quot; style=&quot;align-items:flex-start;gap:24px&quot;&gt;
-&lt;div class=&quot;col&quot; style=&quot;gap:8px&quot;&gt;
+&lt;div class=&quot;col&quot; style=&quot;gap:16px&quot;&gt;
   &lt;div class=&quot;cap&quot;&gt;Closed&lt;/div&gt;
   &lt;button class=&quot;ar-btn ar-btn--outline ar-popup&quot;&gt;claude-opus-5-5 &lt;span class=&quot;ar-popup__chev&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;chevron.down&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;button class=&quot;ar-btn ar-btn--gray ar-btn--sm ar-popup&quot; style=&quot;min-width:120px&quot;&gt;English &lt;span class=&quot;ar-popup__chev&quot;&gt;&lt;span class=&quot;sf&quot; data-symbol=&quot;chevron.down&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;

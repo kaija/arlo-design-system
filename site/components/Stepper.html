@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -35,7 +36,8 @@ body { margin:0; padding:24px; }
 .row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
-&lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-stepper</code>: two 40×28 halves on <code>color-bg-tertiary</code>, corner <code>radius-button</code>, a <code>color-border-strong</code> divider, <code>minus</code> / <code>plus</code> symbols at 12px.</li><li>Always show the current value next to it; dim a half (<code>ar-stepper__btn--disabled</code>) at the limit.</li></ul>
+&lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-stepper</code>: two 44×28 halves on <code>color-bg-tertiary</code>, corner <code>radius-button</code>, a <code>color-border-strong</code> divider, <code>minus</code> / <code>plus</code> symbols at 12px.</li><li>Always show the current value next to it; dim a half (<code>ar-stepper__btn--disabled</code>) at the limit.</li></ul>
+<p><strong>Touch.</strong> Each half has a 44×44 hit area; on touch devices the stepper grows to 36×96px.</p>
 <p><strong>The consumer provides:</strong> two buttons with <code>aria-label</code>s ("Decrease", "Increase"), the value, step and bounds. <strong>Don't</strong> use it when values span a large range; use a <code>Slider</code> or <code>TextField</code>.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

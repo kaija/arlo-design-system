@@ -13,7 +13,7 @@ code{font-family:var(--font-mono);font-size:.875em;letter-spacing:0;background:v
 :focus-visible{outline:none;box-shadow:var(--shadow-focus);border-radius:6px}
 
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:var(--space200);height:64px;padding:0 var(--space300);background:var(--color-bar);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--color-border)}
-.brand{display:flex;align-items:center;gap:var(--space125);color:var(--color-text-primary);font:600 16px/24px var(--font-sans);letter-spacing:-.16px}
+.brand{display:flex;align-items:center;gap:var(--space125);white-space:nowrap;min-width:0;color:var(--color-text-primary);font:600 16px/24px var(--font-sans);letter-spacing:-.16px}
 .brand:hover{text-decoration:none}
 .brand img{width:28px;height:28px}
 .tabs{display:flex;gap:var(--space50);margin-left:var(--space300)}
@@ -24,6 +24,10 @@ code{font-family:var(--font-mono);font-size:.875em;letter-spacing:0;background:v
 .iconbtn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:0;border-radius:var(--radius-button);background:transparent;color:var(--color-text-secondary);cursor:pointer;--sf-size:20px}
 .iconbtn:hover{background:var(--color-bg-tertiary)}
 .menu-btn{display:none}
+.density{height:36px;padding:0 14px;border:1px solid var(--color-border-strong);border-radius:var(--radius-button);background:transparent;color:var(--color-text-secondary);font:500 13px/16px var(--font-sans);cursor:pointer}
+.density:hover{background:var(--color-bg-tertiary)}
+.density.on{background:var(--color-accent-light);border-color:transparent;color:var(--color-accent)}
+@media (pointer: coarse){.density{display:none}}
 
 .shell{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:calc(100vh - 64px)}
 .rail{position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;padding:var(--space200) var(--space125) var(--space600);border-right:1px solid var(--color-border)}
@@ -115,6 +119,9 @@ details.code-box summary{cursor:pointer;padding:var(--space125) var(--space200);
   .rail{position:fixed;top:64px;left:0;z-index:15;width:280px;background:var(--color-bg);transform:translateX(-100%);transition:transform 250ms ease;box-shadow:var(--shadow-xl)}
   body.nav-open .rail{transform:none}
   .menu-btn{display:inline-flex}
+  .iconbtn{width:44px;height:44px}
+  .rail a{height:44px}
+  .density{height:44px}
   .tabs{display:none}
   main{padding:var(--space300) var(--space200) var(--space800)}
   .hero{padding:var(--space400) var(--space300)}
@@ -130,8 +137,11 @@ SITE_JS = r"""
   var root=document.documentElement, KEY='arlo-ds-theme';
   function sys(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
   function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
-  function apply(t){root.setAttribute('data-theme',t);
-    document.querySelectorAll('iframe[data-src]').forEach(function(f){var u=f.getAttribute('data-src')+'?theme='+t;if(f.getAttribute('src')!==u)f.setAttribute('src',u)});
+  var DKEY='arlo-ds-touch';
+  function touchOn(){try{return localStorage.getItem(DKEY)==='1'}catch(e){return false}}
+  function apply(t){root.setAttribute('data-theme',t);var tc=touchOn();root.classList.toggle('ar-touch',tc);
+    document.querySelectorAll('iframe[data-src]').forEach(function(f){var u=f.getAttribute('data-src')+'?theme='+t+(tc?'&touch=1':'');if(f.getAttribute('src')!==u)f.setAttribute('src',u)});
+    var d=document.getElementById('density');if(d){d.setAttribute('aria-pressed',tc);d.classList.toggle('on',tc)}
     var b=document.getElementById('theme');if(b){b.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');b.querySelector('.sf').setAttribute('data-symbol',t==='dark'?'sun.max':'moon')}}
   apply(get()||sys());
   document.addEventListener('DOMContentLoaded',function(){
@@ -142,6 +152,8 @@ SITE_JS = r"""
     document.querySelectorAll('iframe[data-fit]').forEach(function(f){f.addEventListener('load',function(){fit(f);setTimeout(function(){fit(f)},300)});fit(f)});
     function cover(){document.querySelectorAll('.cover-box').forEach(function(b){var k=Math.min(1,b.clientWidth/960);var f=b.querySelector('iframe');f.style.transform='scale('+k+')';b.style.height=(296*k)+'px'})}
     cover();window.addEventListener('resize',cover);
+    var d=document.getElementById('density');
+    if(d)d.addEventListener('click',function(){try{localStorage.setItem(DKEY,touchOn()?'0':'1')}catch(e){}apply(root.getAttribute('data-theme'))});
     var m=document.getElementById('menu');if(m)m.addEventListener('click',function(){document.body.classList.toggle('nav-open')});
     var q=document.getElementById('symq');
     if(q)q.addEventListener('input',function(){var v=q.value.trim().toLowerCase();document.querySelectorAll('.sym').forEach(function(s){s.style.display=!v||s.dataset.name.indexOf(v)>-1?'':'none'})});
@@ -205,6 +217,7 @@ def shell(depth, active_tab, active_link, eyebrow, title, lede, body, extra_head
   <a class="brand" href="{up}index.html"><img src="{up}assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections">{tabs}</nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme">{sf("moon")}</button>
 </header>
 <div class="shell">

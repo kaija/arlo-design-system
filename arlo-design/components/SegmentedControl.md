@@ -7,6 +7,8 @@ A segmented control switches between 2–5 closely related views or modes (Apple
 - `ar-seg--full` stretches segments equally across a container.
 - Text or a symbol in each segment, consistently: don't mix symbol-only and text-only segments.
 
+**Touch.** Each segment has a 44px-tall hit area; on touch devices segments grow to 36px.
+
 **The consumer provides:** the segments, the selected index, and the handler; use `role="tablist"`/`role="tab"` when it switches views. **Don't** use it for actions or for more than 5 options.
 
 ## Markup

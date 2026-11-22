@@ -17,6 +17,7 @@
   <a class="brand" href="../index.html"><img src="../assets/logos/arlo-mark.svg" alt="">Arlo Design System</a>
   <nav class="tabs" aria-label="Sections"><a href="../foundations/color.html">Foundations</a><a href="../symbols/interface.html">Symbols</a><a href="../components/index.html" class="on">Components</a></nav>
   <span class="spacer"></span>
+  <button class="density" id="density" aria-pressed="false" title="Show components at touch sizes, as on a phone">Touch sizes</button>
   <button class="iconbtn" id="theme" aria-label="Switch theme"><span class="sf" data-symbol="moon"></span></button>
 </header>
 <div class="shell">
@@ -39,6 +40,7 @@ body { margin:0; padding:24px; }
 .col { display:flex; flex-direction:column; gap:16px; }
 .cap { font:500 12px/16px var(--font-sans); letter-spacing:.5px; color:var(--color-text-secondary); }
 &lt;/style&gt;</pre></details><div class="section prose"><h2>Guidelines</h2><ul><li><code>ar-toggle</code> 44×26 (touch), <code>ar-toggle--sm</code> 32×18 (desktop forms). Off: <code>color-bg-tertiary</code> track with a <code>color-border-strong</code> edge. On: <code>ar-toggle--on</code>, <code>color-accent</code> track. Knob white with <code>shadow-sm</code>; it slides in 250ms ease.</li><li>The toggle keeps Apple's capsule (<code>radius-pill</code>): it is a switch, not a button, so <code>radius-button</code> does not apply.</li><li>Place it trailing in a <code>List</code> row with the label leading. The change applies at once; no Save button.</li></ul>
+<p><strong>Touch.</strong> The toggle has a 44×44 hit area; <code>ar-toggle--sm</code> returns to full size on touch devices. In a list row, make the whole row toggle it.</p>
 <p><strong>The consumer provides:</strong> <code>role="switch"</code>, <code>aria-checked</code>, the label, and the handler. <strong>Don't</strong> use a toggle for choices that need confirmation (use <code>Checkbox</code> in a form) or for more than two states.</p></div>
 <p class="foot">Arlo Design System · generated from the design-system source by tools/build.py · SF Symbols are Apple's, licensed for apps on Apple platforms.</p>
 </main>

@@ -14,6 +14,8 @@ A button starts an action; Arlo buttons follow Apple's styles (filled, tinted, g
 
 **Corner.** Every size uses the same `radius-button`. The token is 12px: Material's full pill and Apple's capsule are deliberately not used, so 36px and 44px buttons stay soft rectangles while 28px buttons come out nearly round.
 
+**Touch.** Every button has a 44×44 hit area even when drawn smaller. On touch devices `ar-btn` grows to 44px and `ar-btn--sm` to 36px; leave at least 8px (`space100`) between neighbouring buttons, and 16px (`space200`) beside a 28px `ar-btn--sm`, so hit areas never overlap.
+
 **The consumer provides:** a `<button>` (or `<a>` for navigation) with a verb label in sentence case, an optional leading SF Symbol (`.sf`, sized by the button), and a disabled state.
 
 **Do:** use one filled button per view. Swap `arrow.up.circle.fill` (submit) to `stop.fill` in the same button while a response streams.
@@ -36,7 +38,7 @@ Load `tokens.css`, `components.css` and `symbols.css`, put `class="ar-root"` on 
   <button class="ar-btn ar-btn--gray ar-btn--icon" aria-label="More"><span class="sf" data-symbol="ellipsis"></span></button>
   <button class="ar-btn ar-btn--filled ar-btn--disabled" disabled>Disabled</button>
 </div>
-<div class="cap">Sizes · sm 28 · md 36 · lg 44</div>
+<div class="cap">Sizes · sm 28 · md 36 · lg 44 (touch devices: 36 · 44 · 44)</div>
 <div class="row">
   <button class="ar-btn ar-btn--filled ar-btn--sm">Small</button>
   <button class="ar-btn ar-btn--filled">Medium</button>

@@ -7,6 +7,8 @@ A navigation bar sits at the top of a view: where you are, how to go back, and t
 - Top-level views use `ar-navbar--large` with `ar-navbar__large-title` (`headline-large-emphasized`).
 - Marketing pages keep Arlo's 64px (`nav-height`) site nav.
 
+**Touch.** The back button and every action are 44px tall; icon buttons have 44×44 hit areas and grow to 44px on touch devices.
+
 **The consumer provides:** the title, back target, actions with `aria-label`s, and scroll-linked collapse of the large title. **Don't** put more than three trailing actions; move the rest into a `Menu` behind `ellipsis.circle`.
 
 ## Markup
