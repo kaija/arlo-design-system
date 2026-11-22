@@ -6,7 +6,8 @@ Both output folders are rebuilt from scratch: don't edit them by hand.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import site_gen, kit_gen
+import site_gen, kit_gen, status_lab
 
 site_gen.run()
+status_lab.run()
 kit_gen.run()

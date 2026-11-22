@@ -174,6 +174,7 @@ def shell(depth, active_tab, active_link, eyebrow, title, lede, body, extra_head
         return f'<a href="{up}{href}"{" class=\"on\"" if key == active_link else ""}>{label}</a>'
     rail = ['<h4>Get started</h4>', link("index.html", "Overview", "overview"), '<h4>Foundations</h4>']
     rail += [link(f"foundations/{k}.html", label, k) for k, label, *_ in FOUNDATIONS]
+    rail.append(link("foundations/status-lab.html", "Status color lab", "status-lab"))
     rail += ['<h4>Symbols</h4>'] + [link(f"symbols/{k}.html", label, "sym-" + k) for k, label, *_ in SYMBOL_PAGES]
     rail += ['<h4>Components</h4>', link("components/index.html", "All components", "components")]
     for g in B.COMP_GROUPS:
@@ -253,7 +254,7 @@ def color_body():
                          f'<div class="chip d" style="background:linear-gradient({dv},{dv}),#1b1b29"><span>{html.escape(dv)}</span></div></div>'
                          f'<div class="meta"><b>{t["name"]}</b>' + (f'<p>Alias of <code>{alias.group(1)}</code></p>' if alias else "")
                          + f'<p>{B.inline(t.get("usage", ""))}</p></div></div>')
-        out.append(f'<div class="section"><h2>{gname}</h2><p class="sub">Left half light theme, right half dark theme.</p><div class="swatches">{"".join(cards)}</div></div>')
+        out.append(f'<div class="section"><h2>{gname}</h2><p class="sub">Left half light theme, right half dark theme.{' <a href="status-lab.html">Compare with the palettes that were considered →</a>' if gname == "Status" else ""}</p><div class="swatches">{"".join(cards)}</div></div>')
     return f'<div class="prose">{B.md(B.SECS["Color"])}</div>' + "".join(out)
 
 def type_body():

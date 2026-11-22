@@ -1085,8 +1085,8 @@
  },
  "lastChange": {
   "by": "Claude",
-  "at": "2026-11-22T10:47:46Z",
+  "at": "2026-11-22T11:19:28Z",
   "via": "Claude Code",
-  "note": "Menu items raised to 44px (touch target); ar-menu--compact keeps 28px for pointer-only UI"
+  "note": "Status colours switched to Apple system green, orange and red"
  }
 }

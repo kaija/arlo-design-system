@@ -17,12 +17,12 @@ colors:
   color-segment: "#ffffff"
   color-border: rgba(0,0,0,0.06)
   color-border-strong: rgba(0,0,0,0.1)
-  color-success: "#1f9d6b"
-  color-success-light: rgba(31,157,107,0.08)
-  color-warning: "#c07a12"
-  color-warning-light: rgba(192,122,18,0.08)
-  color-danger: "#d1435b"
-  color-danger-light: rgba(209,67,91,0.08)
+  color-success: "#248A3D"
+  color-success-light: rgba(36,138,61,0.08)
+  color-warning: "#C93400"
+  color-warning-light: rgba(201,52,0,0.08)
+  color-danger: "#D70015"
+  color-danger-light: rgba(215,0,21,0.08)
   color-scrim: rgba(26,26,46,0.4)
   text-on-accent: "#ffffff"
   color-bar: rgba(255,255,255,0.82)
@@ -331,7 +331,7 @@ Arlo is a family of free, MIT-licensed, local-first AI agent apps: no vendor bac
 - Text ramp, all indigo-tinted: `color-text-primary` for titles and body, `color-text-secondary` for supporting text, `color-text-tertiary` for placeholders and meta only (3.18:1 on white: never prose or small labels).
 - Grounds: `color-bg` for the page, cards, lists and overlays; `color-bg-secondary` for alternating sections, sidebars and grouped-list backgrounds; `color-bg-tertiary` for tracks and gray control fills.
 - Borders are black-alpha hairlines: `color-border` between things, `color-border-strong` around controls. Never a grey hex.
-- Status colours (`color-success`, `color-warning`, `color-danger` with their `-light` fills) mean state only. Success and warning are under 4.5:1 as small text, so put the colour on the symbol and keep the words in `color-text-primary`; always pair colour with a word and a symbol.
+- Status colours are Apple's system green, orange and red (`color-success`, `color-warning`, `color-danger`, each with a `-light` fill), using Apple's higher-contrast variants in light and the standard ones in dark. They mean state only, never decoration or emphasis. Warning and danger read as small text in both themes; success is 4.40:1 on white, so small success words stay in `color-text-primary` beside a green symbol. In light, orange and red are close in hue: always pair warning with `exclamationmark.triangle` and errors with `exclamationmark.circle` or `xmark.circle.fill`, and always add a word, so no state relies on colour alone.
 - No gradients, no imagery or illustration, no second accent.
 - **Dark theme.** Every colour token has a dark value; components switch with no extra CSS. Dark grounds stay indigo-tinted (`color-bg` #1b1b29, `color-bg-secondary` #131320 for sidebars and grouped backgrounds). Raised overlays (menus, popovers, alerts, sheets) use `color-bg-elevated`, which is lighter than the page, because in dark, elevation reads as lightness rather than shadow. Following Material 3's dark scheme, `color-accent` and `color-danger` lighten so they pass 4.5:1 as text on dark grounds, and filled buttons carry `text-on-accent`, which turns to dark ink. Never hard-code white on an accent fill. Hairlines become white-alpha. Toggle knobs and slider thumbs stay white in both themes, as on Apple platforms.
 
@@ -355,12 +355,12 @@ The YAML above lists light values. Every themed colour, light → dark:
 | `color-segment` | `#ffffff` | `#55556f` |
 | `color-border` | `rgba(0,0,0,0.06)` | `rgba(255,255,255,0.08)` |
 | `color-border-strong` | `rgba(0,0,0,0.1)` | `rgba(255,255,255,0.16)` |
-| `color-success` | `#1f9d6b` | `#3dbf8a` |
-| `color-success-light` | `rgba(31,157,107,0.08)` | `rgba(61,191,138,0.14)` |
-| `color-warning` | `#c07a12` | `#e0a33f` |
-| `color-warning-light` | `rgba(192,122,18,0.08)` | `rgba(224,163,63,0.14)` |
-| `color-danger` | `#d1435b` | `#f27a8e` |
-| `color-danger-light` | `rgba(209,67,91,0.08)` | `rgba(242,122,142,0.14)` |
+| `color-success` | `#248A3D` | `#30D158` |
+| `color-success-light` | `rgba(36,138,61,0.08)` | `rgba(48,209,88,0.14)` |
+| `color-warning` | `#C93400` | `#FF9F0A` |
+| `color-warning-light` | `rgba(201,52,0,0.08)` | `rgba(255,159,10,0.14)` |
+| `color-danger` | `#D70015` | `#FF453A` |
+| `color-danger-light` | `rgba(215,0,21,0.08)` | `rgba(255,69,58,0.14)` |
 | `color-scrim` | `rgba(26,26,46,0.4)` | `rgba(0,0,0,0.6)` |
 | `text-on-accent` | `#ffffff` | `#13131f` |
 | `color-bar` | `rgba(255,255,255,0.82)` | `rgba(27,27,41,0.82)` |
